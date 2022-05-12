@@ -1,3 +1,248 @@
 <header class="header">
-
+    <div class="top-header">
+        <div class="top-header__wrapper">
+            <div class="top-header__row container">
+                <div class="nav-header">
+                    <button type="button" class="nav-header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="nav-header__wrapper">
+                        <nav class="nav-header__body">
+                            <ul class="menu">
+                                <li><a class="menu__link" href="#">О нас</a></li>
+                                <li><a class="menu__link" href="#">Производство</a></li>
+                                <li><a class="menu__link" href="#">Выгоды для вас</a></li>
+                                <li><a class="menu__link" href="#">Гарантии</a></li>
+                                <li><a class="menu__link" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="top-header__actions">
+                    <a href="tel:+74993807890" class="header__phone">
+                        <img class="icon-page icon-page--small" src="content/icons/icon-phone.svg" alt="" aria-hidden="true">
+                        <span>+7 (499) 380-78-90</span>
+                    </a>
+                    <div class="location-page">
+                        <input type="hidden" value="Москва" class="location-page__input">
+                        <button class="location-page__trigger">
+                            <img class="icon-page icon-page--small" src="content/icons/icon-location.svg" alt="" aria-hidden="true">
+                            <span>Москва</span>
+                        </button>
+                        <ul class="location-page__list">
+                            <li>Москва</li>
+                            <li>Санкт-Петербург</li>
+                            <li>Казань</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:info@bastion.pro" class="header__mail">
+                        <img class="icon-page icon-page--small" src="content/icons/icon-mail.svg" alt="" aria-hidden="true">
+                        <span>info@bastion.pro</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__wrapper">
+        <div class="header__row container">
+            <a href="#" class="logo-page">
+                <img src="content/logo-page.png" alt="логотип компании">
+                <p>
+                    <span>Федеральный</span>
+                    <span>производитель</span>
+                    <span>металлоизделий</span>
+                </p>
+            </a>
+            {% include 'includes/catalog-header.njk' %}
+            <div class="search-header">
+                <button type="button" class="search-header__trigger js-drop">
+                    <img class="icon-page" src="content/icons/icon-search.svg" alt="" aria-hidden="true">
+                </button>
+                <form class="search-header__form" action="/" method="get">
+                    <label class="search-header__label">
+                        <button type="submit" class="search-header__btn">
+                            <img class="icon-page" src="content/icons/icon-search.svg" alt="" aria-hidden="true">
+                        </button>
+                        <input type="search" name="q" placeholder="Поиск по названию..." class="search-header__input">
+                        <span class="search-header__border"></span>
+                    </label>
+                </form>
+            </div>
+            <a data-da=".nav-header__wrapper,767,last" href="#" class="btn btn--red">
+                <span>Заказать звонок</span>
+            </a>
+            <div class="actions-header">
+                <div class="actions-header__item">
+                    <button type="button" class="actions-header__trigger js-drop">
+                        <span class="actions-header__icon icon-page">
+                            <span>2</span>
+                            <img src="content/icons/icon-star.svg" alt="" aria-hidden="true">
+                        </span>
+                        <p>Избранное</p>
+                    </button>
+                    <div class="actions-header__wrapper">
+                        <div class="actions-header__content">
+                            <div class="actions-header__head">
+                                Всего в избранном
+                                <span>3 товара</span>
+                            </div>
+                            <div class="actions-header__body">
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-to-cart.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-to-cart.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-to-cart.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-to-cart.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-to-cart.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-to-cart.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions-header__item">
+                    <button type="button" class="actions-header__trigger js-drop">
+                        <span class="actions-header__icon icon-page">
+                            <span>22</span>
+                            <img src="content/icons/icon-cart.svg" alt="" aria-hidden="true">
+                        </span>
+                        <p>Корзина</p>
+                    </button>
+                    <div class="actions-header__wrapper">
+                        <div class="actions-header__content">
+                            <div class="actions-header__head">
+                                Итого в корзине
+                                <span>8 499 руб.</span>
+                            </div>
+                            <div class="actions-header__body">
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб. / 1 шт.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-trash.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб./ 234 шт.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-trash.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб. / 1 шт.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-trash.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                                <div class="actions-header__unit">
+                                    <a href="#" class="actions-header__info">
+                                        <img src="content/cart-mini-01.png" alt="фото товара">
+                                        <p>
+                                            Опора подвижная ОПБ2
+                                            <span>849.9 руб./ 234 шт.</span>
+                                        </p>
+                                    </a>
+                                    <a href="#" class="icon-page icon-page--small">
+                                        <img src="content/icons/icon-trash.svg" alt="" aria-hidden="true">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="actions-header__bottom">
+                                <a href="#" class="btn btn--red">Оформить заказ</a>
+                                <a href="#" download class="btn btn--icon">
+                                    <span class="btn__icon">
+                                        <img class="icon-page" src="content/icons/icon-doc.svg" alt="" aria-hidden="true">
+                                        <img class="btn__icon-sub" src="content/icons/icon-download.svg" alt="" aria-hidden="true">
+                                    </span>
+                                    <span>Коммерческое предложение</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>

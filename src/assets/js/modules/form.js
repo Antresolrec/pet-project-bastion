@@ -146,7 +146,8 @@ function validationField(field) {
   const parent = field.parentNode;
   const errorClass = 'has-error';
   const dataValidate = field.getAttribute('data-validate');
-  const patternEmail = /^[0-9a-z]([.-]?\w+)*@[0-9a-z]([.-]?[0-9a-z])*(\.[0-9a-z]{2,4})+$/;
+  const patternEmail =
+    /^[0-9a-z]([.-]?\w+)*@[0-9a-z]([.-]?[0-9a-z])*(\.[0-9a-z]{2,4})+$/;
   const message = field.parentNode.querySelector('.form-input__error');
   const newPassBlock = field.closest('.form__items--pass');
 

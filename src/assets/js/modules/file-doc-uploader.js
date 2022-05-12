@@ -6,9 +6,8 @@ class FilesDocUploader {
     this.previews = filesDocContainer.querySelector(
       '.files-doc-uploader__previews'
     );
-    this.errorMessage = this.filesDocContainer.getAttribute(
-      'data-error-massage'
-    );
+    this.errorMessage =
+      this.filesDocContainer.getAttribute('data-error-massage');
     this.maxFiles = this.filesDocContainer.getAttribute('data-max-files');
     this.input = filesDocContainer.querySelector('input');
     this.files = [];

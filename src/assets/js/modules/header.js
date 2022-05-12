@@ -128,9 +128,8 @@ const subMenu = document.querySelectorAll('.submenu__trigger');
 
 subMenu.forEach((link) => {
   link.addEventListener('click', (event) => {
-    const isCurOpen = event.currentTarget.parentNode.classList.contains(
-      'js-submenu-open'
-    );
+    const isCurOpen =
+      event.currentTarget.parentNode.classList.contains('js-submenu-open');
     const target = event.currentTarget;
     if (isCurOpen) {
       target.parentNode.classList.remove('js-submenu-open');
