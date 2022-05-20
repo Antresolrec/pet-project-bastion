@@ -11,3 +11,152 @@
     img,svg
         width: 100%
         height: 100%
+
+.logo-page
+    display: inline-flex
+    align-items: center
+    gap: 1rem
+    flex-shrink: 0
+    @media (min-width: 768px)
+        gap: 2rem
+    &--white
+        color: $colorWhite
+    @media (any-hover: hover)
+        &:hover
+            p
+                span
+                    &:last-child
+                        text-decoration: underline
+    img
+        flex-shrink: 0
+        width: 5rem
+        @media (min-width: 480px)
+            width: 7rem
+        @media (min-width: 1024px)
+            width: 8.2rem
+    p
+        letter-spacing: 0.009em
+        font-size: 1.4rem
+        span
+            display: block
+        @media (max-width: 1023px)
+            display: none
+        @media (max-width: 767px)
+            font-size: 1.2rem
+
+.location-page
+    position: relative
+    align-self: center
+    letter-spacing: 0.009em
+    font-size: 1.2rem
+    color: $colorWhite
+    line-height: 0
+    &._open
+        .location-page
+            &__list
+                opacity: 1
+                transform: translateY(0)
+                pointer-events: all
+            &__trigger
+                &:before
+                    transform: translateY(-50%) rotate(-45deg)
+                &:after
+                    transform: translateY(-50%) rotate(45deg)
+    &__input
+        display: none
+
+    &__trigger
+        display: inline-flex
+        align-items: center
+        position: relative
+        gap: .5rem
+        padding: 0 1.5rem 0 0
+        @media (min-width: 768px)
+            gap: 1rem
+            padding: 0 1.7rem 0 0
+        @media (any-hover: hover)
+            &:hover
+                text-decoration: underline
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            top: 50%
+            background-color: $colorRed
+            width: .6rem
+            height: .1rem
+            transition: transform .25s
+        &:before
+            right: .4rem
+            transform: translateY(-50%) rotate(45deg)
+        &:after
+            right: 0
+            transform: translateY(-50%) rotate(-45deg)
+
+    &__list
+        position: absolute
+        top: 100%
+        right: 0
+        transform: translateY(-1rem)
+        opacity: 0
+        pointer-events: none
+        transition: opacity .25s, transform .25s
+        background-color: #212429
+        padding: 1rem
+        width: auto
+        margin: .5rem 0 0 0
+        text-align: right
+        line-height: 1.1
+        li
+            margin: 0 0 1rem 0
+            white-space: nowrap
+            display: inline-block
+            cursor: pointer
+            &:last-child
+                margin: 0
+            @media (any-hover: hover)
+                &:hover
+                    text-decoration: underline
+            &._stop
+                opacity: .5
+                pointer-events: none
+
+.socials-page
+    display: flex
+    flex-wrap: wrap
+    gap: 1rem 1.5rem
+    a
+        border-radius: 50%
+        border: solid .1rem $colorWhite
+        padding: .5rem
+        width: 2.6rem
+        height: 2.6rem
+        img,svg
+            width: 100%
+            height: 100%
+
+.section-page
+    padding: 5rem 0
+    @media (max-width: 767px)
+        padding: 3rem 0
+    &--no-top
+        padding: 0 0 5rem
+        @media (max-width: 767px)
+            padding: 0 0 3rem 0
+    &--gray
+        background-color: $colorGrayLight
+
+.head-section
+    display: flex
+    justify-content: space-between
+    gap: 2rem
+    margin: 0 0 2rem 0
+    @media (min-width: 768px)
+        margin: 0 0 3rem 0
+    .btn
+        width: auto
+        padding: 0 3rem
+
+.img-response
+    img
+        @include fullSize

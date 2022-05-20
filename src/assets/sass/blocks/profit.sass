@@ -1,0 +1,75 @@
+.profit
+
+    &__row
+        display: flex
+        justify-content: center
+        position: relative
+        flex-wrap: wrap
+        margin: -1rem
+        @media (min-width: 768px)
+            flex-wrap: nowrap
+            justify-content: space-between
+            margin: 0
+        &:before
+            display: none
+            @media (min-width: 768px)
+                display: block
+                content: ''
+                position: absolute
+                top: 5.5rem
+                left: 0
+                width: 100%
+                height: .4rem
+                background-color: #DEE1F3
+                z-index: 0
+            @media (min-width: 1024px)
+                top: 7.5rem
+
+    &__item
+        z-index: 1
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 50%
+        padding: 1rem
+        @media (min-width: 768px)
+            width: auto
+            padding: 0
+        b
+            color: $colorRed
+            font-weight: 700
+            font-size: 4.4rem
+            width: 11rem
+            height: 11rem
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: $colorWhite
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.13)
+            position: relative
+            @include hoverUp
+            @media (min-width: 1024px)
+                width: 15rem
+                height: 15rem
+                font-size: 6.4rem
+            &:before
+                content: ''
+                @include centered
+                width: 90%
+                height: 90%
+                border: solid 2px $colorRed
+                border-radius: 50%
+                z-index: 1
+                pointer-events: none
+        p
+            margin: 1rem 0 0 0
+            line-height: 1.2
+            max-width: 20rem
+            @media (min-width: 768px)
+                max-width: 16rem
+                margin: 1.5rem -2.5rem 0
+                font-size: 1.6rem
+            @media (min-width: 1024px)
+                max-width: 18rem

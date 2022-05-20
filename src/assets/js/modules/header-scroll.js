@@ -1,10 +1,10 @@
-const header = document.querySelector('.header__wrapper');
+const header = document.querySelector('.header__fix');
 const scrollClass = '_scroll';
 
 function scrollHeader() {
   if (header) {
     const srcValue = window.pageYOffset;
-    if (srcValue > 0) {
+    if (srcValue > 1) {
       header.classList.add(scrollClass);
     } else {
       header.classList.remove(scrollClass);

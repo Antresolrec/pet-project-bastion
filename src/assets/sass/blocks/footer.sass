@@ -1,0 +1,130 @@
+.footer
+    background-color: #222628
+    color: $colorWhite
+    padding: 8rem 0 3rem
+    letter-spacing: 0.009em
+    .logo-page
+        @media (max-width: 767px)
+            margin: 0 auto
+            p
+                display: block
+    a:not(.logo-page)
+        transition: opacity .25s
+        &:hover,
+        &:active
+            opacity: .75
+    &__row
+        display: flex
+        justify-content: space-between
+        gap: 2rem
+        flex-wrap: wrap
+        @media (min-width: 768px)
+            font-size: 1.4rem
+            flex-wrap: nowrap
+
+    &__column
+        @media (max-width: 767px)
+            width: 100%
+
+
+    &__column-title
+        font-weight: 700
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 1rem
+        &._active
+            img
+                transform: rotate(-180deg)
+        @media (min-width: 768px)
+            cursor: text
+            margin: 0 0 2rem 0
+        &:before
+            content: ''
+            z-index: 2
+            @include fullSize
+            @media (min-width: 768px)
+                display: none
+        span,img
+            z-index: 1
+        img
+            transition: transform .5s
+            @media (min-width: 768px)
+                display: none
+
+
+    &__column-content
+        display: block
+        @media (max-width: 767px)
+            display: none
+            padding: 2rem 0 0 0
+
+    &__nav
+        display: flex
+        flex-direction: column
+        gap: 2rem
+    &__links
+        display: flex
+        flex-direction: column
+        gap: 2rem
+
+    &__payment
+        display: flex
+        flex-wrap: wrap
+        font-size: 1rem
+        margin: -.5rem -.7rem
+        max-width: 16rem
+        li
+            width: 50%
+            text-align: center
+            padding: .5rem .7rem
+            img
+                width: 2.4rem
+                height: 2.4rem
+            p
+                margin: .5rem 0 0 0
+                line-height: 1.2
+
+
+    &__columm
+
+
+    &__contacts
+        display: flex
+        flex-direction: column
+        gap: 2rem
+
+        p
+            span
+                margin: 1.8rem 0 0 0
+                display: block
+
+
+    &__contacts-phone
+        font-weight: 700
+
+
+    &__bottom
+        display: flex
+        justify-content: space-between
+        flex-direction: column-reverse
+        align-items: center
+        gap: 2rem
+        margin: 3rem 0 0 0
+        @media (min-width: 768px)
+            flex-direction: row
+            padding: 2rem 0 0 0
+            border-top: solid .2rem rgba($colorWhite, .2)
+
+
+    &__copyright
+        font-size: 1.2rem
+        line-height: 1.2
+        @media (max-width: 767px)
+            text-align: center
+            width: 100%
+            border-top: solid .2rem rgba($colorWhite, .2)
+            padding: 2rem 0 0 0
+
+

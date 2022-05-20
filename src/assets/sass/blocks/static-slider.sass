@@ -1,0 +1,18 @@
+.static-slider
+    .swiper-slide
+        height: auto
+        width: 25%
+        @media (max-width: 1023px)
+            width: 33.333%
+        @media (max-width: 767px)
+            width: 50%
+        @media (max-width: 424px)
+            width: 100%
+    &--inner
+        .swiper
+            width: auto
+            margin: 0 -1.5rem
+        .swiper-slide
+            padding: 1.5rem
+    .count-field__input
+        pointer-events: none

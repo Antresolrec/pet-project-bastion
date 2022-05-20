@@ -1,0 +1,33 @@
+.card-popup
+    display: flex
+    gap: 2.5rem
+    @media (max-width: 479px)
+        flex-wrap: wrap
+    &__img
+        width: 12rem
+        flex-shrink: 0
+        align-self: flex-start
+        img
+            width: 100%
+
+    &__body
+        flex: 1 1 auto
+
+    &__code
+        color: $colorRed
+        font-size: 1.4rem
+        margin: 0 0 1rem 0
+        display: flex
+        flex-wrap: wrap
+        gap: 1rem
+        span
+            border-radius: .2rem
+            background: rgba($colorRed, .1)
+            padding: .5rem
+    &__info
+        line-height: 1.2
+
+    &__price
+        font-weight: 700
+        color: $colorRed
+        white-space: nowrap

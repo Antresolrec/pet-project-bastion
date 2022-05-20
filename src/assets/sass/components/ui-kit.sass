@@ -1,4 +1,12 @@
+.btn-wrapper
+    display: flex
+    justify-content: center
+    margin: 3rem 0 0 0
+    .btn
+        width: auto
+        min-width: 25rem
 .btn
+    cursor: pointer
     display: inline-flex
     align-items: center
     justify-content: center
@@ -14,9 +22,25 @@
     height: 4.2rem
     padding: 0 1rem
     width: 100%
+    transition: transform .25s, box-shadow .25s
+    &:hover
+        transform: translate(-1px,-2px)
+        box-shadow: 3px 3px 5px rgba($colorRed, .3)
+    &:active
+        transform: translate(0,0)
+        box-shadow: none
+        transition: all 0s
     &--red
         background-color: $colorRed
         color: $colorWhite
+    &--gray
+        color: $colorBlack
+        border-color: transparent
+        background-color: $colorGrayLight
+        &:hover
+            box-shadow: 3px 3px 5px rgba($colorGray, .3)
+        &:active
+            box-shadow: none
     &--icon
         border-color: transparent
         font-size: 1.2rem
@@ -34,8 +58,91 @@
             border-radius: 50%
             background-color: $colorWhite
             padding: .3rem
-            bottom: -.7rem
-            right: -.7rem
+            bottom: -.6rem
+            right: -.6rem
             z-index: 2
-            width: 2rem
-            height: 2rem
+            width: 1.8rem
+            height: 1.8rem
+    &--static
+        font-size: 1.6rem
+        width: auto
+        align-self: flex-start
+        border: none
+        padding: 0
+        @media (min-width: 768px)
+            font-size: 1.4rem
+        &:hover
+            transform: translate(0,0)
+            box-shadow: none
+            &:before
+                transform: translateX(100%)
+
+        span
+            margin: 0 0 0 -2.5rem
+            z-index: 1
+            color: $colorBlack
+        &:before
+            content: ''
+            display: block
+            width: 5rem
+            height: 5rem
+            border-radius: 50%
+            flex-shrink: 0
+            background-color: $colorRed
+            z-index: 0
+            transition: transform .5s
+        &:after
+            content: ''
+            width: 5rem
+            height: .1rem
+            background-color: $colorBlack
+            flex-shrink: 0
+
+.title-section
+    font-weight: 500
+    line-height: 1.2
+    letter-spacing: 1px
+    font-size: 2.2rem
+    @media (min-width: 480px)
+        font-size: 2.4rem
+    @media (min-width: 768px)
+        font-size: 3.6rem
+
+.nav-slider
+    display: flex
+    z-index: 3
+    align-self: center
+    gap: 1rem
+    @media (min-width: 480px)
+        gap: 2rem
+
+.btn-slider
+    width: 3rem
+    height: 3rem
+    border-radius: 50%
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTUiIGN5PSIxNSIgcj0iMTUiIGZpbGw9IiNFMzA2MTQiLz4KPHBhdGggZD0iTTkuODc0OTYgMTVDOS44NzQ5NiAxNC44MjQyIDkuOTQyMTYgMTQuNjQ4MiAxMC4wNzY0IDE0LjUxNEwxNi45NTE0IDcuNjM4OThDMTcuMjIgNy4zNzAzNCAxNy42NTUxIDcuMzcwMzQgMTcuOTIzNSA3LjYzODk4QzE4LjE5MiA3LjkwNzYyIDE4LjE5MjIgOC4zNDI2NCAxNy45MjM1IDguNjExMTFMMTEuNTM0NiAxNUwxNy45MjM1IDIxLjM4OUMxOC4xOTIyIDIxLjY1NzYgMTguMTkyMiAyMi4wOTI2IDE3LjkyMzUgMjIuMzYxMUMxNy42NTQ5IDIyLjYyOTYgMTcuMjE5OSAyMi42Mjk4IDE2Ljk1MTQgMjIuMzYxMUwxMC4wNzY0IDE1LjQ4NjFDOS45NDIxNiAxNS4zNTE5IDkuODc0OTYgMTUuMTc1OSA5Ljg3NDk2IDE1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==")
+    transition: opacity .25s, transform .1s
+    &.swiper-button-disabled
+        opacity: .5
+    &.swiper-button-lock
+        display: none
+.btn-next
+    transform: rotate(-180deg)
+    &:active:not(.swiper-button-disabled)
+        transform: rotate(-180deg) translateX(-2px)
+.btn-prev
+    &:active:not(.swiper-button-disabled)
+        transform: translateX(-2px)
+.swiper-scrollbar
+    position: relative
+    height: .7rem
+    background-color: #F2F2F2
+    margin: 2rem 0 0 0
+    border-radius: .5rem
+.swiper-scrollbar-drag
+    background-color: $colorRed
+    height: 100%
+    cursor: pointer
+    border-radius: .5rem

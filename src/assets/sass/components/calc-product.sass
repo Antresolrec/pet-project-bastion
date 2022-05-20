@@ -1,0 +1,76 @@
+.calc-product
+    position: relative
+    padding: 0 0 2.5rem 0
+    &.has-error
+        .calc-product
+            &__left-quantity
+                opacity: 1
+                transform: translateY(0)
+                pointer-events: all
+        .count-field
+            border-color: $colorRed
+            &__input
+                border-color: $colorRed
+            &__more
+                cursor: default
+                &:before,
+                &:after
+                    background-color: $colorRed
+
+    &__left-quantity
+        position: absolute
+        bottom: .5rem
+        left: 0
+        font-size: 1.4rem
+        color: $colorRed
+        opacity: 0
+        transform: translateY(-5px)
+        pointer-events: none
+        transition: opacity .25s, transform .25s
+
+.count-field
+    display: flex
+    background-color: $colorWhite
+    border: solid 1px
+    border-color: $colorGray
+    border-radius: .2rem
+    transition: border-color .25s
+    &__btn
+        width: 3.5rem
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        flex-shrink: 0
+        cursor: pointer
+        transition: background-color .25s
+        &:hover
+            background-color: $colorGrayLight
+                
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            width: 1rem
+            height: 2px
+            background-color: $colorBlack
+            transition: .25s background-color
+        &:after
+            transform: rotate(90deg)
+
+    &__less
+        &:after
+            display: none
+
+    &__input
+        border-left: solid 1px
+        border-right: solid 1px
+        border-color: $colorGray
+        flex: 1 1 auto
+        transition: .25s border-color
+        font-size: 2rem
+        input
+            display: block
+            height: 4rem
+            width: 100%
+            text-align: center

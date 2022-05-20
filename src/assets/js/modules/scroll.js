@@ -1,5 +1,5 @@
 import * as SmoothScroll from './smoothScroll/smoothScroll';
-import menuClose from './burger';
+import { menuClose } from './burger';
 
 function offsetPage(el) {
   const rect = el.getBoundingClientRect();

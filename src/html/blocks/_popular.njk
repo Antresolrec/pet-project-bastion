@@ -1,0 +1,100 @@
+{% from 'mixins/card.njk' import card %}
+
+<div class="static-slider">
+    <div class="head-section">
+        <h2 class="title-section">Популярные товары</h2>
+        <div class="nav-slider">
+            <button type="button" class="btn-slider btn-prev"></button>
+            <button type="button" class="btn-slider btn-next"></button>
+        </div>
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                {{card(
+                    1,
+                    ['pink','orange','green'],
+                    'content/card-01.png',
+                    'ГОСТ 14911-82',
+                    'Опора подвижная ОПБ2',
+                    false,
+                    [{type:('red'), value:('849')}, {type:('old'), value:('1000')}]
+                )}}
+            </div>
+            <div class="swiper-slide">
+                {{card(
+                    2,
+                    false,
+                    'content/card-04.png',
+                    'ГОСТ 14911-82',
+                    'Опора неподвижная ОПБ12 неподвижная',
+                    false,
+                    [{type:('red'), value:('349')}, {type:('old'), value:('900')}]
+                )}}
+            </div>
+            <div class="swiper-slide">
+                {{card(
+                    3,
+                    ['pink','green'],
+                    'content/card-02.png',
+                    'ГОСТ 251-49121-82',
+                    'Опора тавровая хомутовая ТХ тавровая опора хомутовая',
+                    '2000'
+                )}}
+            </div>
+            <div class="swiper-slide">
+                {{card(
+                    4,
+                    ['orange'],
+                    'content/card-03.png',
+                    'ГОСТ 211-421-825',
+                    'Опора хомутовая тавровая',
+                    '152'
+                )}}
+            </div>
+            <div class="swiper-slide">
+                {{card(
+                    5,
+                    ['pink','orange','green'],
+                    'content/card-01.png',
+                    'ГОСТ 14911-82',
+                    'Опора подвижная ОПБ2',
+                    false,
+                    [{type:('red'), value:('849')}, {type:('old'), value:('1000')}]
+                )}}
+            </div>
+            <div class="swiper-slide">
+                {{card(
+                    6,
+                    false,
+                    'content/card-04.png',
+                    'ГОСТ 14911-82',
+                    'Опора неподвижная ОПБ12 неподвижная',
+                    false,
+                    [{type:('red'), value:('349')}, {type:('old'), value:('900')}]
+                )}}
+            </div>
+            <div class="swiper-slide">
+                {{card(
+                    7,
+                    ['pink','green'],
+                    'content/card-02.png',
+                    'ГОСТ 251-49121-82',
+                    'Опора тавровая хомутовая ТХ тавровая опора хомутовая',
+                    '2000'
+                )}}
+            </div>
+            <div class="swiper-slide">
+                {{card(
+                    8,
+                    ['orange'],
+                    'content/card-03.png',
+                    'ГОСТ 211-421-825',
+                    'Опора хомутовая тавровая',
+                    '152'
+                )}}
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+</div>

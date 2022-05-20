@@ -52,7 +52,7 @@ function bodyLock(delay) {
   }
 }
 
-function menuClose(delay) {
+export function menuClose(delay) {
   const menuBody = document.querySelector('.nav-header__wrapper');
   iconBurger.classList.remove('_open');
   menuBody.classList.remove('_open');
@@ -77,4 +77,13 @@ if (iconBurger) {
   });
 }
 
-export default menuClose;
+export function checkOpenCatalog() {
+  const catalogHeader = document.querySelector('.catalog-header');
+  if (catalogHeader) {
+    if (catalogHeader.classList.contains('_open')) {
+      bodyLockAdd(250);
+    } else {
+      bodyLockRemove(250);
+    }
+  }
+}

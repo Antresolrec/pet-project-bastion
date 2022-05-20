@@ -1,5 +1,26 @@
 .header
     background-color: $colorWhite
+    position: relative
+    z-index: 10
+    height: 11rem
+    @media (min-width: 480px)
+        height: 13rem
+    @media (min-width: 768px)
+        height: 15.8rem
+    &__fix
+        position: fixed
+        z-index: 10
+        top: 0
+        left: 0
+        width: 100%
+        &._scroll
+            .header
+                &__wrapper
+                    padding: .5rem 0
+            .top-header
+                padding: .5rem 0
+                @media (max-width: 767px)
+                    padding: 1rem 0
     &__phone
         font-size: 1.6rem
         font-weight: 700
@@ -7,11 +28,15 @@
         display: inline-flex
         align-items: center
         gap: 1rem
+        &:hover,
+        &:active
+            span
+                opacity: .75
         span
             display: none
             @media (min-width: 1024px)
                 display: block
-
+                transition: opacity .25s
     &__mail
         font-size: 1.2rem
         font-weight: 300
@@ -19,62 +44,74 @@
         display: inline-flex
         align-items: center
         gap: 1rem
+        &:hover,
+        &:active
+            span
+                opacity: .75
         span
             display: none
             @media (min-width: 1024px)
                 display: block
-
+                transition: opacity .25s
     &__wrapper
         padding: 1rem 0
+        transition: padding .25s
+        background-color: $colorWhite
         @media (min-width: 768px)
             padding: 2rem 0
-
-
-
     &__row
         display: flex
         align-items: center
         gap: 1rem
         @media (min-width: 1024px)
             gap: 2rem
-            
         >.btn
             max-width: 16rem
             @media (min-width: 1024px)
                 max-width: 20rem
 
-
 .top-header
     background-color: #212429
     color: $colorWhite
-    height: 4.5rem
-    &__wrapper
-        display: flex
-        min-height: 4.5rem
-        padding: 1rem 0
-        background-color: #212429
-        position: fixed
-        top: 0
-        left: 0
-        width: 100%
-        z-index: 10
+    display: flex
+    padding: 1.5rem 0
+    transition: padding .25s
     &__row
         display: flex
         justify-content: space-between
         align-items: center
-
-
     &__actions
         display: flex
         align-items: center
         gap: 1.5rem
         z-index: 1
+        transition: all .25s
         @media (min-width: 768px)
             gap: 3rem
+        .actions-header
+            align-self: center
+            width: 0
+            opacity: 0
+            pointer-events: none
+            transition: all .25s
+            margin: 0 0 0 -1.5rem
+            @media (min-width: 768px)
+                margin: 0 0 0 -3rem
+            &__trigger
+                height: 1.5rem
+                @media (any-hover: hover)
+                    &:hover
+                        .actions-header__icon span
+                            transform: translateY(0)
+            &__icon
+                width: 1.5rem
+                height: 1.5rem
+                span
+                    font-size: .9rem
+                    border-color: #212429
 
 .nav-header
     align-self: center
-
     &__burger
         display: block
         position: relative
@@ -93,18 +130,15 @@
             border-radius: 5px
             &:first-child
                 top: 0
-
             &:last-child
                 top: auto
                 bottom: 0
-
         &._open
             span
                 transform: scale(0)
                 &:first-child
                     transform: rotate(-45deg)
                     top: calc(50% - 1px)
-
                 &:last-child
                     transform: rotate(45deg)
                     bottom: calc(50% - 1px)
@@ -125,7 +159,7 @@
             overflow-y: scroll
             overflow-x: hidden
             transform: translateX(-100%)
-            background-color: $colorBlack
+            background-color: #212429
             padding: 7rem 1.5rem 3rem
             pointer-events: none
             &._open
@@ -136,7 +170,6 @@
     &__body
         @media (max-width: 767px)
             margin: 0 0 2rem 0
-
 
 .menu
     display: flex
@@ -149,103 +182,12 @@
     &__link
         font-weight: 300
         letter-spacing: 0.009em
+        transition: opacity .25s
         @media (min-width: 768px)
             font-size: 1.2rem
-
-
-.location-page
-    position: relative
-    align-self: center
-    letter-spacing: 0.009em
-    font-size: 1.2rem
-    color: $colorRed
-    line-height: 0
-    &._open
-        .location-page
-            &__list
-                opacity: 1
-                transform: translateY(0)
-                pointer-events: all
-            &__trigger
-                &:before
-                    transform: translateY(-50%) rotate(-45deg)
-                &:after
-                    transform: translateY(-50%) rotate(45deg)
-    &__input
-        display: none
-
-
-    &__trigger
-        display: inline-flex
-        align-items: center
-        position: relative
-        gap: .5rem
-        padding: 0 1.5rem 0 0
-        @media (min-width: 768px)
-            gap: 1rem
-            padding: 0 1.7rem 0 0
-        &:before,
-        &:after
-            content: ''
-            position: absolute
-            top: 50%
-            background-color: $colorRed
-            width: .6rem
-            height: .1rem
-            transition: transform .25s 
-        &:before
-            right: .4rem
-            transform: translateY(-50%) rotate(45deg)
-        &:after
-            right: 0
-            transform: translateY(-50%) rotate(-45deg)
-
-    &__list
-        position: absolute
-        top: 100%
-        right: 0
-        transform: translateY(-1rem)
-        opacity: 0
-        pointer-events: none
-        transition: opacity .25s, transform .25s
-        background-color: #212429
-        padding: 1rem
-        width: auto
-        margin: .5rem 0 0 0
-        text-align: right
-        line-height: 1.1
-        li
-            margin: 0 0 1rem 0
-            white-space: nowrap
-            display: inline-block
-            cursor: pointer
-            &:last-child
-                margin: 0
-            &._stop
-                opacity: .5
-                pointer-events: none
-
-
-
-.logo-page
-    display: inline-flex
-    align-items: center
-    gap: 2rem
-    flex-shrink: 0
-    img
-        flex-shrink: 0
-        width: 5rem
-        @media (min-width: 480px)
-            width: 7rem
-        @media (min-width: 1024px)
-            width: 8.2rem
-    p
-        letter-spacing: 0.009em
-        font-size: 1.4rem
-        span
-            display: block
-        @media (max-width: 1023px)
-            display: none
+        &:hover,
+        &:active
+            opacity: .75
 
 .catalog-header
     &._open
@@ -397,6 +339,9 @@
             font-size: 1.6rem
         @media (min-width: 1024px)
             font-size: 2rem
+        @media (any-hover: hover)
+            &:hover
+                text-decoration: underline
     >img
         width: 100%
         border-radius: .5rem
@@ -418,7 +363,7 @@
                 &:before
                     opacity: 1
                     transform: translateY(-50%) translateX(0)
-                    
+
     &__link
         line-height: 1.3
         text-align: left
@@ -427,13 +372,12 @@
         width: 100%
         span
             display: block
-            color: rgba(#B3B3B3, .8)
+            color: rgba($colorGray, .8)
         &:hover
             &:before
                 opacity: 1
                 transform: translateY(-50%) translateX(0)
-                
-                
+
         &:before,
             content: ''
             position: absolute
@@ -451,7 +395,6 @@
                 opacity: 1
                 transform: translateY(-50%) translateX(0)
 
-            
 .lastmenu-catalog-header
     @media (max-width: 767px)
         transform: translateX(100%)
@@ -465,6 +408,7 @@
             &:hover
                 background-color: $colorRed
                 color: $colorWhite
+
 .search-header
     flex: 1 1 auto
     &._open
@@ -505,6 +449,10 @@
         @media (min-width: 1024px)
             gap: 1.5rem
             padding: 0 0 0 1.5rem
+        @media (any-hover: hover)
+            &:hover
+                .search-header__border
+                    border-color: $colorBlack
     &__input
         height: 4.2rem
         width: 100%
@@ -515,33 +463,23 @@
         @media (min-width: 768px)
             font-size: 1.5rem
         &::placeholder
-            color: #B3B3B3
-        &:focus
+            color: $colorGray
+        &:focus,
+        &:hover
             ~.search-header__border
                 border-color: $colorBlack
 
     &__btn
-
+        @media (any-hover: hover)
+            &:hover
+                transform: scale(1.1)
     &__border
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
+        @include fullSize
         pointer-events: none
         border: .1rem solid
         border-color: #E6E6E6
         border-radius: .4rem
         transition: border-color .25s
-
-
-.btn
-
-    &__icon
-
-
-    &__icon-sub
-
 
 .actions-header
     display: flex
@@ -551,7 +489,7 @@
     @media (min-width: 1024px)
         gap: 2.5rem
         margin: 0
-        
+
     &__item
         position: relative
         &._open
@@ -561,9 +499,12 @@
                     transform: translateY(0)
                     pointer-events: all
 
-
     &__trigger
         text-align: center
+        @media (any-hover: hover)
+            &:hover
+                .actions-header__icon span
+                    transform: translateY(-3px)
         >p
             font-size: 1.2rem
             font-weight: 300
@@ -592,7 +533,7 @@
             display: inline-block
             border: solid .2rem $colorWhite
             z-index: 2
-
+            transition: .25s transform
 
     &__wrapper
         position: absolute
@@ -606,9 +547,7 @@
         background-color: $colorWhite
         min-width: 25rem
 
-
     &__content
-
 
     &__head
         border-bottom: .1rem solid #E6E6E6
@@ -616,17 +555,22 @@
         font-weight: 300
         font-size: 1.4rem
         text-align: right
-        span
+        &-value
             display: block
             margin: .5rem 0 0 0
             color: $colorRed
             font-weight: 400
 
+        &-title
+            color: $colorBlack
+            span
+                display: block
+                margin: .5rem 0 0 0
+                color: $colorGray
 
     &__body
         max-height: 20rem
         overflow: auto
-
 
     &__unit
         border-bottom: .1rem solid #E6E6E6
@@ -636,6 +580,10 @@
         gap: 1rem
         &:last-child
             border-bottom: none
+        .icon-page
+            &:hover,
+            &:active
+                opacity: .75
 
 
     &__info
@@ -645,15 +593,23 @@
         font-size: 1.2rem
         letter-spacing: 0.009em
         line-height: 1.2
+        @media (any-hover: hover)
+            &:hover
+                p
+                    text-decoration: underline
         img
             width: 3rem
             height: 3rem
             object-fit: cover
             align-self: flex-start
-        span
+        p
+            >span:not([class])
+                display: block
+                color: $colorGray
+                span
+                    display: inline
+        &-title
             display: block
-            color: #B3B3B3
-
 
     &__bottom
         padding: 1.5rem
@@ -662,6 +618,20 @@
         gap: 1.5rem
 
 
+.cart-header
+    &._empty
+        .count-cart
+            display: none
+        .actions-header
+            &__bottom
+                display: none
+            &__head-value
+                display: none
 
-.btn--icon
-
+.favorite-header
+    &._empty
+        .count-favorite
+            display: none
+        .actions-header
+            &__head-value
+                display: none

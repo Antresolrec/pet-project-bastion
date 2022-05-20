@@ -10,10 +10,10 @@ class InputNumber {
     this.maxValue = this.input.getAttribute('data-max');
     this.minValue = this.input ? this.input.getAttribute('data-min') : 1;
     this.buttonTop = this.inputContainer
-      ? this.inputContainer.querySelector('.calc-product__more')
+      ? this.inputContainer.querySelector('.count-field__more')
       : null;
     this.buttonBottom = this.inputContainer
-      ? this.inputContainer.querySelector('.calc-product__less')
+      ? this.inputContainer.querySelector('.count-field__less')
       : null;
 
     this.init();
@@ -34,7 +34,7 @@ class InputNumber {
           this.inputContainer.classList.add('has-error');
           setTimeout(() => {
             this.inputContainer.classList.remove('has-error');
-          }, 5000);
+          }, 3000);
         }
         return this.maxValue;
       }

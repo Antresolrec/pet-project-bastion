@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Bastion</title>
+    <meta name="description" content="Bastion">
+    <meta name="keywords" content="Bastion">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="Bastion"/>
+    <meta property="og:description" content="Bastion"/>
     <meta property="og:image" content=""/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content=""/>
@@ -21,12 +21,15 @@
         {{ breadCrumbsMixin(breadCrumbs, breadBackButton) }}
         <main class="page">
             {% block content %}{% endblock %}
+            {% include 'includes/recall.njk' %}
         </main>
         {% include 'includes/footer.njk' %}
 
-        {% include 'blocks/popups/cookie-warning-popup.njk' %}
+        {% include 'blocks/popups/popup-recall.njk' %}
+        {% include 'blocks/popups/popup-add-to-cart.njk' %}
+        <!-- {% include 'blocks/popups/cookie-warning-popup.njk' %}
         {% include 'includes/cookies.njk' %} 
-        {% include 'includes/warning-banner.njk' %} 
+        {% include 'includes/warning-banner.njk' %} -->
     </div>
 </body>
 </html>

@@ -2,9 +2,10 @@ import { Fancybox } from '@fancyapps/ui';
 
 Fancybox.bind('[data-fancybox]', {
   Toolbar: false,
+  Thumbs: false,
   click: false,
-  closeButton: 'top',
   dragToClose: false,
+  closeButton: 'top',
   Image: {
     zoom: false,
     wheel: false,

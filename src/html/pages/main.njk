@@ -9,13 +9,49 @@
 }] %} #}
 
 {% block content %}
-
-    <div class="page-section">
+    <section class="section-page section-page--no-top">
+        {% include 'blocks/_banner-slider.njk' %}
+    </section>
+    <section class="section-page">
         <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae optio minus eveniet inventore sint perspiciatis rem veritatis quam earum velit! Ut error debitis delectus asperiores molestiae nemo, atque tempora.
-            </p>
+            <div class="head-section">
+                <h2 class="title-section">Инженерно-производственный холдинг</h2>
+            </div>
+            {% include 'blocks/_holding.njk' %}
         </div>
-    </div>
-
+    </section>
+    <section class="section-page">
+        <div class="container">
+            <div class="head-section">
+                <h2 class="title-section">Направления деятельности</h2>
+            </div>
+            {% include 'blocks/_ways.njk' %}
+        </div>
+    </section>
+    <section class="section-page">
+        <div class="container">
+            {% include 'blocks/_popular.njk' %}
+            <div class="btn-wrapper">
+                <a href="#" class="btn">Перейти в каталог</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-page section-page--gray">
+        <div class="container">
+            <div class="head-section">
+                <h2 class="title-section">5 главных выгод для вас!</h2>
+            </div>
+            {% include 'blocks/_profit.njk' %}
+        </div>
+    </section>
+    <section class="section-page">
+        <div class="container">
+            {% include 'blocks/_trust.njk' %}
+        </div>
+    </section>
+    <section class="section-page">
+        <div class="container">
+            {% include 'blocks/_certs.njk' %}
+        </div>
+    </section>
 {% endblock %}

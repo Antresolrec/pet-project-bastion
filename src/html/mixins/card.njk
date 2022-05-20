@@ -1,0 +1,102 @@
+{% macro card(key, tags, img, code, title, priceActual, pricesOld = false) %}
+<div data-key="{{key}}" class="card">
+    <label class="card__favorite js-add-to-favorite">
+        <input type="checkbox" name="favorite">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3"/>
+        </svg>
+        <span class="card__favorite-add">В избранное</span>
+        <span class="card__favorite-remove">Из избранного</span>
+    </label>
+    {% if tags %}
+        <ul class="card__tags">
+            {% for tag in tags %}
+                {% if tag === 'pink' %}
+                    <li class="card__tag card__tag--{{tag}}">хит</li>
+                {% endif %}
+                {% if tag === 'orange' %}
+                    <li class="card__tag card__tag--{{tag}}">скидка</li>
+                {% endif %}
+                {% if tag === 'green' %}
+                    <li class="card__tag card__tag--{{tag}}">акция</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <a href="#" class="card__img">
+        <img src="{{img}}" alt="фото товара">
+    </a>
+    <div class="card__head">
+        <div class="card__code">
+            <span>{{code}}</span>
+        </div>
+        <a href="#" class="card__title">{{title}}</a>
+        <div class="card__prices">
+            {% if priceActual %}
+                <div class="card__price card__price--actual"><span>{{priceActual}}</span> руб.</div>
+            {% endif %}
+            {% if pricesOld %}
+                {% for pricesOld in pricesOld %}
+                    <div class="card__price card__price--{{ pricesOld.type }}"><span>{{ pricesOld.value }}</span> руб.</div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    <div class="card__body">
+        <div class="card__chars">
+            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+            <div class="card__chars-list">
+                <div class="card__chars-close js-drop-close">
+                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                </div>
+                <ul>
+                    <li>
+                        <span>Тип</span>
+                        <p>2</p>
+                    </li>
+                    <li>
+                        <span>Вертикальная нагрузка, кН</span>
+                        <p>40</p>
+                    </li>
+                    <li>
+                        <span>Диаметр Дн, мм</span>
+                        <p>478</p>
+                    </li>
+                    <li>
+                        <span>Ширина опоры, мм</span>
+                        <p>460</p>
+                    </li>
+                    <li>
+                        <span>Масса блоков, кг</span>
+                        <p>71</p>
+                    </li>
+                    <li>
+                        <span>Артикул</span>
+                        <p>VS13420</p>
+                    </li>
+                    <li>
+                        <span>Единица измерения</span>
+                        <p>шт</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card__actions">
+            <div class="calc-product">
+                <div class="count-field">
+                    <div class="count-field__btn count-field__less"></div>
+                    <div class="count-field__input">
+                        <input type="number" data-max="3" data-min="1">
+                    </div>
+                    <div class="count-field__btn count-field__more"></div>
+                </div>
+                <div class="calc-product__left-quantity"></div>
+            </div>
+            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                <span>В корзину</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

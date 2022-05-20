@@ -1,10 +1,12 @@
 // import './modules/fix-ie';
 
+import './modules/exports';
+
 import './modules/dynamic-adapt';
 
 // import './modules/header';
 
-// import './modules/spollers';
+import './modules/spollers';
 
 // import './modules/tooltips';
 
@@ -24,7 +26,7 @@ import './modules/dynamic-adapt';
 
 // import './modules/form-steps';
 
-// import './modules/calc-product';
+import './modules/calc-product';
 
 // import './modules/tooltips-mini';
 
@@ -50,7 +52,9 @@ import './modules/custom-drop-menu';
 
 // import './modules/swiper/news-slider';
 
-// import './modules/swiper/banner-slider';
+import './modules/swiper/banner-slider';
+
+import './modules/swiper/static-slider';
 
 // import './modules/swiper/selections-slider';
 
@@ -69,3 +73,15 @@ import './modules/burger';
 import './modules/_clickDocument';
 
 import './modules/menu-steps-header';
+
+import './modules/inputPlaceholder';
+
+import './modules/mouse-parallax';
+
+import './modules/fancybox';
+
+import './modules/_scrollWindow';
+
+import './modules/addToCart';
+
+import './modules/checkFavorite';

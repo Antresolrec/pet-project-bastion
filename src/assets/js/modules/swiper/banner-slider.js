@@ -1,26 +1,22 @@
-import Swiper from 'swiper/swiper-bundle.js';
+import Swiper from 'swiper/swiper-bundle.min';
 
 class BannerSlider {
   constructor(container) {
     this.slider = container.querySelector('.swiper');
+    this.btnPrev = container.querySelector('.btn-prev');
+    this.btnNext = container.querySelector('.btn-next');
     this.swiperSlider = null;
     this.init();
   }
 
   initSlider() {
     this.swiperSlider = new Swiper(this.slider, {
-      speed: 1000,
-      clickable: true,
-      observer: true,
-      slidesPerView: 1,
-      observeParents: true,
-      observeSlideChildren: true,
-      slideToClickedSlide: true,
-      autoplay: true,
-      effect: 'fade',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      speed: 1500,
+      parallax: true,
+      loop: true,
+      navigation: {
+        nextEl: this.btnNext,
+        prevEl: this.btnPrev,
       },
     });
   }
@@ -30,8 +26,8 @@ class BannerSlider {
   }
 }
 
-const jsBannerSliders = document.querySelectorAll('.banner-slider');
+const jsBannerSlider = document.querySelectorAll('.banner-slider');
 
-jsBannerSliders.forEach((el) => {
+jsBannerSlider.forEach((el) => {
   new BannerSlider(el);
 });
