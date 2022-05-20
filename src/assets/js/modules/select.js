@@ -11,17 +11,7 @@ function destroySelect(el) {
   el.slim.destroy();
 }
 function setSelect(el) {
-  const option = el.querySelector('[data-default-value]');
-  if (option) {
-    const optionValue = option.value;
-    el.slim.set(optionValue);
-    const selectMoveLabel = option.closest('.js-move-label');
-    if (selectMoveLabel) {
-      selectMoveLabel.classList.add('js-move-label--active');
-    }
-  } else {
-    el.slim.set();
-  }
+  el.slim.set();
 }
 function initSelect(block) {
   if (block != null) {

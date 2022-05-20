@@ -1,0 +1,223 @@
+.catalog
+
+    &__head
+        display: flex
+        justify-content: space-between
+        margin: 0 0 3rem 0
+        position: relative
+        z-index: 3
+
+    &__title
+        display: flex
+        align-items: center
+        gap: 2rem
+
+    &__back
+        flex-shrink: 0
+        width: 3.6rem
+        height: 3.6rem
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        border: solid 1px $colorRed
+        transition: background-color .25s
+        &:hover
+            background-color: $colorRed
+            svg
+                path
+                    fill: $colorWhite
+        svg
+            width: 2rem
+            height: 2rem
+            path
+                transition: fill .25s
+
+
+    &__actions
+        display: flex
+        gap: 3rem
+        .select
+            min-width: 23rem
+
+
+    &__switch
+        display: flex
+        align-self: center
+        gap: 1.5rem
+        background-color: #F8F8F8
+        border-radius: 5rem
+        padding: .5rem .6rem
+        label
+            position: relative
+            width: 2rem
+            height: 2rem
+            cursor: pointer
+            border-radius: 50%
+            svg
+                width: 100%
+                height: 100%
+                position: relative
+                z-index: 1
+                path
+                    fill: $colorRed
+                    transition: fill .25s 
+            span
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: 3rem
+                height: 3rem
+                opacity: 0
+                z-index: 0
+                &:before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    width: 100%
+                    height: 100%
+                    background-color: $colorRed
+                    border-radius: 50%
+                    transition: all .25s
+                    pointer-events: none
+            .cards-switch-table
+                ~span
+                    &:before
+                        left: 100%
+            .cards-switch-list
+                ~span
+                    &:before
+                        left: -100%
+            input
+                display: none
+                &:checked
+                    ~span
+                        opacity: 1
+                        &:before
+                            left: 0
+                    ~svg
+                        path
+                            fill: $colorWhite
+            
+
+
+    &__wrapper
+        display: flex
+        z-index: 1
+
+
+    &__side
+        max-width: 30rem
+        width: 100%
+        flex-shrink: 0
+
+
+    &__content
+        flex: 1 1 auto
+        border-left: solid 1px #E6E6E6
+
+
+    &__types
+        display: flex
+        flex-wrap: wrap
+        gap: .5rem
+        padding: 1.5rem
+    &__type
+        cursor: pointer
+        span
+            font-size: 1.4rem
+            line-height: normal
+            text-transform: uppercase
+            padding: .5rem 1.5rem
+            background-color: #E6E6E6
+            border-radius: .4rem
+            transition-duration: .25s
+            transition-property: color, background-color
+        input
+            display: none
+            &:checked
+                ~span
+                    background-color: $colorRed
+                    color: $colorWhite
+
+
+
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+
+    &__card
+        width: 33.333%
+
+
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 2rem
+        margin: 3rem 0 0 0
+        padding: 0 0 0 1.5rem
+
+
+    &__nav-item
+
+    &__nav-link
+        color: $colorRed
+        margin: 0 0 0 2rem
+
+
+.catalog__row._list
+    .catalog__card
+        width: 100%
+    .card
+        padding: 4rem 0 3rem
+        border: none
+        border-bottom: solid 1px #E6E6E6
+        flex-direction: row
+        gap: 2rem
+        &__favorite
+            right: 0
+        &__img
+            width: 20rem
+        &__head
+            display: flex
+            align-items: center
+            gap: 1rem
+            margin: 0 0 2rem 0
+        &__code
+            margin: 0
+        &__title
+            margin: 0
+        &__content
+            flex: 1 1 auto
+        &__prices
+            flex: 1 1 auto
+            justify-content: flex-end
+        &__body
+            flex-direction: row
+            gap: 2rem
+        &__trigger
+            display: none
+        &__actions
+            order: 2
+        &__chars
+            flex: 1 1 auto
+            order: 1
+            &-close
+                display: none
+            &-list
+                position: relative
+                overflow: visible
+                top: auto
+                left: auto
+                opacity: 1
+                width: auto
+                height: auto
+                padding: 0
+                pointer-events: all
+                ul
+                    opacity: 1
+                    transform: translateY(0)
+                    transition: all 0s

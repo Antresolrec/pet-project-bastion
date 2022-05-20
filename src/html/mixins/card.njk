@@ -26,75 +26,77 @@
     <a href="#" class="card__img">
         <img src="{{img}}" alt="фото товара">
     </a>
-    <div class="card__head">
-        <div class="card__code">
-            <span>{{code}}</span>
-        </div>
-        <a href="#" class="card__title">{{title}}</a>
-        <div class="card__prices">
-            {% if priceActual %}
-                <div class="card__price card__price--actual"><span>{{priceActual}}</span> руб.</div>
-            {% endif %}
-            {% if pricesOld %}
-                {% for pricesOld in pricesOld %}
-                    <div class="card__price card__price--{{ pricesOld.type }}"><span>{{ pricesOld.value }}</span> руб.</div>
-                {% endfor %}
-            {% endif %}
-        </div>
-    </div>
-    <div class="card__body">
-        <div class="card__chars">
-            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
-            <div class="card__chars-list">
-                <div class="card__chars-close js-drop-close">
-                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
-                </div>
-                <ul>
-                    <li>
-                        <span>Тип</span>
-                        <p>2</p>
-                    </li>
-                    <li>
-                        <span>Вертикальная нагрузка, кН</span>
-                        <p>40</p>
-                    </li>
-                    <li>
-                        <span>Диаметр Дн, мм</span>
-                        <p>478</p>
-                    </li>
-                    <li>
-                        <span>Ширина опоры, мм</span>
-                        <p>460</p>
-                    </li>
-                    <li>
-                        <span>Масса блоков, кг</span>
-                        <p>71</p>
-                    </li>
-                    <li>
-                        <span>Артикул</span>
-                        <p>VS13420</p>
-                    </li>
-                    <li>
-                        <span>Единица измерения</span>
-                        <p>шт</p>
-                    </li>
-                </ul>
+    <div class="card__content">
+        <div class="card__head">
+            <div class="card__code">
+                <span>{{code}}</span>
+            </div>
+            <a href="#" class="card__title">{{title}}</a>
+            <div class="card__prices">
+                {% if priceActual %}
+                    <div class="card__price card__price--actual"><span>{{priceActual}}</span> руб.</div>
+                {% endif %}
+                {% if pricesOld %}
+                    {% for pricesOld in pricesOld %}
+                        <div class="card__price card__price--{{ pricesOld.type }}"><span>{{ pricesOld.value }}</span> руб.</div>
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
-        <div class="card__actions">
-            <div class="calc-product">
-                <div class="count-field">
-                    <div class="count-field__btn count-field__less"></div>
-                    <div class="count-field__input">
-                        <input type="number" data-max="3" data-min="1">
+        <div class="card__body">
+            <div class="card__chars">
+                <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                <div class="card__chars-list">
+                    <div class="card__chars-close js-drop-close">
+                        <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
                     </div>
-                    <div class="count-field__btn count-field__more"></div>
+                    <ul>
+                        <li>
+                            <span>Тип</span>
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <span>Вертикальная нагрузка, кН</span>
+                            <p>40</p>
+                        </li>
+                        <li>
+                            <span>Диаметр Дн, мм</span>
+                            <p>478</p>
+                        </li>
+                        <li>
+                            <span>Ширина опоры, мм</span>
+                            <p>460</p>
+                        </li>
+                        <li>
+                            <span>Масса блоков, кг</span>
+                            <p>71</p>
+                        </li>
+                        <li>
+                            <span>Артикул</span>
+                            <p>VS13420</p>
+                        </li>
+                        <li>
+                            <span>Единица измерения</span>
+                            <p>шт</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="calc-product__left-quantity"></div>
             </div>
-            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
-                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
-                <span>В корзину</span>
+            <div class="card__actions">
+                <div class="calc-product">
+                    <div class="count-field">
+                        <div class="count-field__btn count-field__less"></div>
+                        <div class="count-field__input">
+                            <input type="number" data-max="3" data-min="1">
+                        </div>
+                        <div class="count-field__btn count-field__more"></div>
+                    </div>
+                    <div class="calc-product__left-quantity"></div>
+                </div>
+                <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                    <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                    <span>В корзину</span>
+                </div>
             </div>
         </div>
     </div>

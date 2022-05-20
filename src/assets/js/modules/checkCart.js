@@ -1,5 +1,6 @@
+const cartHeader = document.querySelector('.cart-header');
+
 export default function checkCart() {
-  const cartHeader = document.querySelector('.cart-header');
   const title = cartHeader.querySelector('.actions-header__head-title');
   const count = cartHeader.querySelector('.count-cart').textContent;
   const countN = Number(count);
@@ -12,4 +13,6 @@ export default function checkCart() {
   }
 }
 
-checkCart();
+if (cartHeader) {
+  checkCart();
+}

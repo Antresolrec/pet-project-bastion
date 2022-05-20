@@ -1,0 +1,63 @@
+.select
+    max-width: 100%
+    font-size: 1.6rem
+    &::disabled
+        background-color: $colorWhite
+        color: #797979
+    .ss-single-selected
+        min-height: 4.4rem
+        height: auto
+        border: 0.1rem solid #E3E3E3
+        border-radius: 0
+        padding: 1rem 1.5rem
+        transition: border-color .25s
+        &.ss-disabled
+            background-color: $colorWhite
+            color: #797979
+            cursor: auto
+            .placeholder
+                color: rgba(0, 0, 0, .7)
+        .placeholder
+            color: $colorBlack
+            overflow: visible
+            text-overflow: unset
+            white-space: normal
+            .ss-disabled
+                color: $colorGray
+        .ss-arrow
+            margin: 0 0 0 1rem
+            span
+                border-color: $colorBlack
+                padding: 0.4rem
+                @media (max-width: 767px)
+                    padding: 0.2rem
+    .ss-content
+        z-index: 8
+        .ss-list
+            padding: 1rem 0
+            max-height: 27rem
+            @media (max-width: 767px)
+                max-height: 18.5rem
+            .ss-option
+                padding: 1.5rem 1.6rem
+                color: #A5A5A5
+                transition: color .25s, background-color .25s
+                @media (max-width: 1023px)
+                    color: $colorBlack
+                @media (max-width: 767px)
+                    padding: 0.8rem 0.6rem
+                &.ss-highlighted
+                    background-color: #F8F8F8
+                    color: $colorBlack
+                    &:active
+                        color: $colorBlack
+                &:hover
+                    background-color: #F8F8F8
+                    color: $colorBlack
+                &:active
+                    color: $colorBlack
+                &.ss-disabled
+                    @media (max-width: 1023px)
+                        color: #A5A5A5
+                    &:hover
+                        color: #A5A5A5

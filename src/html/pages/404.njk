@@ -1,0 +1,20 @@
+{% extends "layouts/_default.njk" %}
+
+{% set breadCrumbs = [{
+    name: 'Главная',
+    link: '#'
+}, {
+    name: 'Страница 404',
+    link: '#'
+}] %}
+
+{% block content %}
+    <section class="section-page section-page--no-top">
+        <div class="container">
+            {% include 'blocks/_error.njk' %}
+            <div class="btn-wrapper">
+                <a href="main.html" class="btn btn--red">Вернуться на главную</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

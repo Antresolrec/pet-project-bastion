@@ -143,6 +143,10 @@
         padding: 0 0 5rem
         @media (max-width: 767px)
             padding: 0 0 3rem 0
+    &--no-bottom
+        padding: 5rem 0 0 0
+        @media (max-width: 767px)
+            padding: 3rem 0 0 0
     &--gray
         background-color: $colorGrayLight
 
@@ -160,3 +164,65 @@
 .img-response
     img
         @include fullSize
+
+.pag-page
+    display: inline-flex
+    border: solid 1px $colorGray
+    font-size: 1.6rem
+    line-height: normal
+    li
+        &:last-child
+            .pag-page__item
+                border-right: none
+    &__item
+        width: 3.6rem
+        height: 3.6rem
+        display: flex
+        justify-content: center
+        align-items: center
+        color: $colorGray
+        border-right: solid 1px $colorGray
+        transition: color .25s
+        &._active
+            color: $colorBlack
+        &:hover
+            color: $colorBlack
+            svg
+                path
+                    fill: $colorBlack
+        svg
+            width: 1.4rem
+            height: 1.4rem
+            path
+                transition: fill .25s
+
+.sort-page
+    display: flex
+    align-items: center
+    gap: .5rem
+    &__items
+        display: flex
+        gap: .5rem
+    &__item
+        border-radius: 50%
+        cursor: pointer
+        &:hover
+            span
+                color: $colorRed
+        span
+            border-radius: 50%
+            border: solid 1px
+            border-color: transparent
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 3rem
+            height: 3rem
+            transition-duration: .25s
+            transition-property: border-color, color
+        input
+            display: none
+            &:checked
+                ~span
+                    border-color: $colorRed
+                    color: $colorRed

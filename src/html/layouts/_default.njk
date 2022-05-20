@@ -21,8 +21,8 @@
         {{ breadCrumbsMixin(breadCrumbs, breadBackButton) }}
         <main class="page">
             {% block content %}{% endblock %}
-            {% include 'includes/recall.njk' %}
         </main>
+        {% include 'includes/recall.njk' %}
         {% include 'includes/footer.njk' %}
 
         {% include 'blocks/popups/popup-recall.njk' %}

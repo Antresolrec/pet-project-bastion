@@ -109,6 +109,11 @@
             object-fit: contain
             transition: transform .25s
 
+    &__content
+        display: flex
+        flex-direction: column
+        flex: 1 1 auto
+
     &__head
         margin: 0 0 1rem 0
         flex: 1 1 auto
@@ -120,6 +125,7 @@
         display: flex
         flex-wrap: wrap
         gap: 1rem
+        white-space: nowrap
         span
             border-radius: .2rem
             background: rgba($colorRed, .1)
@@ -139,6 +145,7 @@
         font-size: 1.8rem
         display: flex
         flex-wrap: wrap
+        white-space: nowrap
         gap: .5rem 1rem
 
     &__price
@@ -176,7 +183,6 @@
         padding: 5rem 1.5rem 2rem
         opacity: 0
         pointer-events: none
-        transition: opacity .25s
         ul
             font-size: 1.2rem
             transform: translateY(20px)

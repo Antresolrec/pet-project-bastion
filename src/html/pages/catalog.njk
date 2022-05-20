@@ -1,0 +1,218 @@
+{% extends "layouts/_default.njk" %}
+{% from 'mixins/card.njk' import card %}
+
+{% set breadCrumbs = [{
+    name: 'Главная',
+    link: '#'
+}, {
+    name: 'Каталог',
+    link: '#'
+}] %}
+
+{% block content %}
+<section class="section-page section-page--no-top">
+    <div class="container">
+        <div class="catalog">
+            <div class="catalog__head">
+                <div class="catalog__title">
+                    <a href="#" class="catalog__back">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.60369 3.08754C5.83149 3.31534 5.8315 3.68469 5.60369 3.9125L3.09953 6.41669H12.1912C12.5134 6.41669 12.7746 6.67786 12.7746 7.00002C12.7746 7.32219 12.5134 7.58335 12.1912 7.58335H3.09953L5.60369 10.0875C5.8315 10.3154 5.83149 10.6847 5.60369 10.9125C5.37588 11.1403 5.00654 11.1403 4.77873 10.9125L1.27876 7.4125C1.05096 7.18469 1.05096 6.81535 1.27876 6.58754L4.77873 3.08754C5.00654 2.85974 5.37588 2.85973 5.60369 3.08754Z" fill="#E30614"/>
+                        </svg>
+                    </a>
+                    <h1 class="title-section">Опоры трубопроводов</h1>
+                </div>
+                <div class="catalog__actions">
+                    <select class="select js-select">
+                        <option data-placeholder="true">Сортировка</option>
+                        <option value="value1">По возрастанию цены</option>
+                        <option value="value2">По умолчанию</option>
+                        <option value="value3">По убыванию цены</option>
+                        <option value="value4">Сначала новые товары</option>
+                        <option value="value5">Сначала старые товары</option>
+                    </select>
+                    <div class="catalog__switch">
+                        <label>
+                            <input type="radio" name="cards-switch" class="cards-switch-table" checked>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2C1 1.44772 1.44772 1 2 1H4.5C5.05229 1 5.5 1.44772 5.5 2V4.5C5.5 5.05229 5.05229 5.5 4.5 5.5H2C1.44772 5.5 1 5.05229 1 4.5V2ZM4.5 2H2V4.5H4.5V2ZM6.5 2C6.5 1.44772 6.94772 1 7.5 1H10C10.5523 1 11 1.44772 11 2V4.5C11 5.05229 10.5523 5.5 10 5.5H7.5C6.94772 5.5 6.5 5.05229 6.5 4.5V2ZM10 2H7.5V4.5H10V2ZM1 7.5C1 6.94772 1.44772 6.5 2 6.5H4.5C5.05229 6.5 5.5 6.94772 5.5 7.5V10C5.5 10.5523 5.05229 11 4.5 11H2C1.44772 11 1 10.5523 1 10V7.5ZM4.5 7.5H2V10H4.5V7.5ZM6.5 7.5C6.5 6.94772 6.94772 6.5 7.5 6.5H10C10.5523 6.5 11 6.94772 11 7.5V10C11 10.5523 10.5523 11 10 11H7.5C6.94772 11 6.5 10.5523 6.5 10V7.5ZM10 7.5H7.5V10H10V7.5Z" fill="#E30614"/>
+                            </svg>
+                            <span></span>
+                        </label>
+                        <label>
+                            <input type="radio" name="cards-switch" class="cards-switch-list">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 4.99998C1.44772 4.99998 1 5.44768 1 5.99998C1 6.55228 1.44772 6.99998 2 6.99998C2.55228 6.99998 3 6.55228 3 5.99998C3 5.44768 2.55228 4.99998 2 4.99998Z" fill="white"/>
+                                <path d="M1 9.49998C1 8.94768 1.44772 8.49998 2 8.49998C2.55228 8.49998 3 8.94768 3 9.49998C3 10.0523 2.55228 10.5 2 10.5C1.44772 10.5 1 10.0523 1 9.49998Z" fill="white"/>
+                                <path d="M5 5.49998C4.72386 5.49998 4.5 5.72384 4.5 5.99998C4.5 6.27612 4.72386 6.49998 5 6.49998H11C11.2761 6.49998 11.5 6.27612 11.5 5.99998C11.5 5.72384 11.2761 5.49998 11 5.49998H5Z" fill="white"/>
+                                <path d="M4.5 9.49998C4.5 9.22384 4.72386 8.99998 5 8.99998H11C11.2761 8.99998 11.5 9.22384 11.5 9.49998C11.5 9.77612 11.2761 9.99998 11 9.99998H5C4.72386 9.99998 4.5 9.77612 4.5 9.49998Z" fill="white"/>
+                                <path d="M5 1.99998C4.72386 1.99998 4.5 2.22384 4.5 2.49998C4.5 2.77612 4.72386 2.99998 5 2.99998H11C11.2761 2.99998 11.5 2.77612 11.5 2.49998C11.5 2.22384 11.2761 1.99998 11 1.99998H5Z" fill="white"/>
+                                <path d="M2 1.57141C1.44772 1.57141 1 2.01911 1 2.57141C1 3.12371 1.44772 3.57141 2 3.57141C2.55228 3.57141 3 3.12371 3 2.57141C3 2.01911 2.55228 1.57141 2 1.57141Z" fill="white"/>
+                            </svg>
+                            <span></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__wrapper">
+                <div class="catalog__side">
+                    {% include 'blocks/_filter-catalog.njk' %}
+                </div>
+                <div class="catalog__content">
+                    <div class="catalog__types">
+                        <label class="catalog__type">
+                            <input type="checkbox" checked>
+                            <span>ГОСТ 14911-82</span>
+                        </label>
+                        <label class="catalog__type">
+                            <input type="checkbox">
+                            <span>ОСТ 36-146-88</span>
+                        </label>
+                        <label class="catalog__type">
+                            <input type="checkbox">
+                            <span>НТС 65-06</span>
+                        </label>
+                        <label class="catalog__type">
+                            <input type="checkbox">
+                            <span>ОСТ 36-146-77</span>
+                        </label>
+                        <label class="catalog__type">
+                            <input type="checkbox">
+                            <span>НТС 65-06</span>
+                        </label>
+                    </div>
+                    <div class="catalog__row js-catalog-row">
+                        <div class="catalog__card">
+                            {{card(
+                                1,
+                                ['pink','orange','green'],
+                                'content/card-01.png',
+                                'ГОСТ 14911-82',
+                                'Опора подвижная ОПБ2',
+                                false,
+                                [{type:('red'), value:('849')}, {type:('old'), value:('1000')}]
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                2,
+                                false,
+                                'content/card-04.png',
+                                'ГОСТ 14911-82',
+                                'Опора неподвижная ОПБ12 неподвижная',
+                                false,
+                                [{type:('red'), value:('349')}, {type:('old'), value:('900')}]
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                3,
+                                ['pink','green'],
+                                'content/card-02.png',
+                                'ГОСТ 251-49121-82',
+                                'Опора тавровая хомутовая ТХ тавровая опора хомутовая',
+                                '2000'
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                4,
+                                ['orange'],
+                                'content/card-03.png',
+                                'ГОСТ 211-421-825',
+                                'Опора хомутовая тавровая',
+                                '152'
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                1,
+                                ['pink','orange','green'],
+                                'content/card-01.png',
+                                'ГОСТ 14911-82',
+                                'Опора подвижная ОПБ2',
+                                false,
+                                [{type:('red'), value:('849')}, {type:('old'), value:('1000')}]
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                2,
+                                false,
+                                'content/card-04.png',
+                                'ГОСТ 14911-82',
+                                'Опора неподвижная ОПБ12 неподвижная',
+                                false,
+                                [{type:('red'), value:('349')}, {type:('old'), value:('900')}]
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                3,
+                                ['pink','green'],
+                                'content/card-02.png',
+                                'ГОСТ 251-49121-82',
+                                'Опора тавровая хомутовая ТХ тавровая опора хомутовая',
+                                '2000'
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                4,
+                                ['orange'],
+                                'content/card-03.png',
+                                'ГОСТ 211-421-825',
+                                'Опора хомутовая тавровая',
+                                '152'
+                            )}}
+                        </div>
+                        <div class="catalog__card">
+                            {{card(
+                                1,
+                                ['pink','orange','green'],
+                                'content/card-01.png',
+                                'ГОСТ 14911-82',
+                                'Опора подвижная ОПБ2',
+                                false,
+                                [{type:('red'), value:('849')}, {type:('old'), value:('1000')}]
+                            )}}
+                        </div>
+                    </div>
+                    <div class="catalog__nav">
+                        <div class="catalog__nav-item">
+                            <div class="sort-page">
+                                <span>Выводить по</span>
+                                <div class="sort-page__items">
+                                    <label class="sort-page__item">
+                                        <input type="radio" name="cards-sort" checked>
+                                        <span>9</span>
+                                    </label>
+                                    <label class="sort-page__item">
+                                        <input type="radio" name="cards-sort">
+                                        <span>15</span>
+                                    </label>
+                                    <label class="sort-page__item">
+                                        <input type="radio" name="cards-sort">
+                                        <span>21</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__nav-item">
+                            {% include 'blocks/_pagination.njk' %}
+                            <a href="#" class="catalog__nav-link">Показать все товары</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="typography section-page section-page--no-bottom">
+                <h3>Опоры трубопроводов от Бастион Груп - производитель металлических изделий №1</h3>
+                <p>Надежность работы трубопровода в значительной мере зависит от правильности и прочности его крепления. Основные средства крепления трубопроводов — это опора, подвеска, кронштейны, скобы и другие части опорных конструкций. Мы изготавливаем типовые опоры трубопроводов по нижеперечисленным существующим нормативным документам, а также изготовим любые нестандартные опоры трубопроводов по чертежам заказчика.</p>
+                <p>Жесткие и пружинные подвески рассчитаны на вертикальную нагрузку горизонтальных и вертикальных участков трубопровода. Основным материалом деталей является сталь 17гс-12, 17г1с-12, 14г2-12, 09г2с-14, 20, 20к и пр.</p>
+                <p>Марка стали выбирается исходя от параметров окружающей среды, опоры могут использоваться при температуре от -60°C. Конструкции опор, представленные на сайте, отличаются между собой методом крепления с трубопроводом и несущей способностью.</p>
+                <p>Подвески являются сборными устройствами, соединяются при помощи сварки. Сварные швы отвечают требованиям СНиП III-18-75, СНиП II-23-81. Резьбовые части опор обрабатываются антикоррозионной смазкой ПВК по ГОСТ 19537-83 или ее аналогом.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

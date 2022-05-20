@@ -14,7 +14,7 @@ import './modules/spollers';
 
 // import './modules/form';
 
-// import './modules/select';
+import './modules/select';
 
 // import './modules/calendar';
 
@@ -85,3 +85,5 @@ import './modules/_scrollWindow';
 import './modules/addToCart';
 
 import './modules/checkFavorite';
+
+import './modules/switch-catalog';
