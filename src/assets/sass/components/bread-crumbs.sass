@@ -6,7 +6,9 @@
     font-size: 1.4rem
     letter-spacing: 0.009em
     font-weight: 300
-    margin: 2rem 0
+    margin: 1.5rem 0
+    @media (min-width: 480px)
+        margin: 2rem 0
     &__item
         color: #030235
         a
@@ -19,3 +21,6 @@
                 width: 1rem
                 height: 1px
                 background-color: $colorGray
+            @media (any-hover: hover)
+                &:hover
+                    text-decoration: underline

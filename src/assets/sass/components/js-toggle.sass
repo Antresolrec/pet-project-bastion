@@ -1,0 +1,16 @@
+.js-toggle
+    &._show
+        .js-toggle
+            &__item
+                display: block
+                animation: showOpacity .7s
+            &__trigger
+                &:before
+                    content: attr(data-hide)
+
+    &__item
+        display: none
+
+    &__trigger
+        &:before
+            content: attr(data-show)

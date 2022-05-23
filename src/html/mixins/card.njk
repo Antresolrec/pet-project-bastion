@@ -9,29 +9,31 @@
         <span class="card__favorite-remove">Из избранного</span>
     </label>
     {% if tags %}
-        <ul class="card__tags">
+        <ul class="card__tags tags-product">
             {% for tag in tags %}
                 {% if tag === 'pink' %}
-                    <li class="card__tag card__tag--{{tag}}">хит</li>
+                    <li class="tags-product__item tags-product__item--{{tag}}">хит</li>
                 {% endif %}
                 {% if tag === 'orange' %}
-                    <li class="card__tag card__tag--{{tag}}">скидка</li>
+                    <li class="tags-product__item tags-product__item--{{tag}}">скидка</li>
                 {% endif %}
                 {% if tag === 'green' %}
-                    <li class="card__tag card__tag--{{tag}}">акция</li>
+                    <li class="tags-product__item tags-product__item--{{tag}}">акция</li>
                 {% endif %}
             {% endfor %}
         </ul>
     {% endif %}
     <a href="#" class="card__img">
-        <img src="{{img}}" alt="фото товара">
+        <img src="{{img}}" alt="фото товара" title="картинка с гавнокачеством из макета">
     </a>
     <div class="card__content">
         <div class="card__head">
-            <div class="card__code">
-                <span>{{code}}</span>
+            <div class="card__head-row">
+                <div class="card__code code-product">
+                    <span>{{code}}</span>
+                </div>
+                <a href="#" class="card__title">{{title}}</a>
             </div>
-            <a href="#" class="card__title">{{title}}</a>
             <div class="card__prices">
                 {% if priceActual %}
                     <div class="card__price card__price--actual"><span>{{priceActual}}</span> руб.</div>

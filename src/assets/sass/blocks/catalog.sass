@@ -6,40 +6,57 @@
         margin: 0 0 3rem 0
         position: relative
         z-index: 3
+        flex-wrap: wrap
+        gap: 1rem 2rem
 
     &__title
         display: flex
         align-items: center
-        gap: 2rem
+        gap: 1rem
+
+        @media (min-width: 768px)
+            gap: 2rem
 
     &__back
         flex-shrink: 0
-        width: 3.6rem
-        height: 3.6rem
         border-radius: 50%
         display: flex
         justify-content: center
         align-items: center
         border: solid 1px $colorRed
         transition: background-color .25s
+        width: 3rem
+        height: 3rem
+        @media (min-width: 480px)
+            width: 3.6rem
+            height: 3.6rem
         &:hover
             background-color: $colorRed
             svg
                 path
                     fill: $colorWhite
+        &:active
+            svg
+                transform: translateX(-2px)
         svg
-            width: 2rem
-            height: 2rem
+            width: 1.6rem
+            height: 1.6rem
+            @media (min-width: 480px)
+                width: 2rem
+                height: 2rem
             path
                 transition: fill .25s
 
-
     &__actions
         display: flex
-        gap: 3rem
+        margin: 0 0 0 auto
+        gap: 2rem
+        @media (min-width: 480px)
+            gap: 3rem
         .select
-            min-width: 23rem
-
+            min-width: 20rem
+            @media (min-width: 480px)
+                min-width: 23rem
 
     &__switch
         display: flex
@@ -61,7 +78,7 @@
                 z-index: 1
                 path
                     fill: $colorRed
-                    transition: fill .25s 
+                    transition: fill .25s
             span
                 position: absolute
                 top: 50%
@@ -99,41 +116,51 @@
                     ~svg
                         path
                             fill: $colorWhite
-            
-
 
     &__wrapper
         display: flex
         z-index: 1
-
+        @media (max-width: 767px)
+            flex-wrap: wrap
 
     &__side
-        max-width: 30rem
         width: 100%
         flex-shrink: 0
-
+        max-width: 100%
+        @media (min-width: 768px)
+            max-width: 26rem
+        @media (min-width: 1280px)
+            max-width: 30rem
 
     &__content
         flex: 1 1 auto
-        border-left: solid 1px #E6E6E6
-
+        width: 100%
+        position: relative
+        z-index: 1
+        @media (min-width: 768px)
+            border-left: solid 1px #E6E6E6
 
     &__types
         display: flex
         flex-wrap: wrap
         gap: .5rem
-        padding: 1.5rem
+        padding: 1.5rem 0
+        @media (min-width: 768px)
+            padding: 1.5rem
     &__type
         cursor: pointer
         span
-            font-size: 1.4rem
+            font-size: 1.2rem
             line-height: normal
             text-transform: uppercase
-            padding: .5rem 1.5rem
             background-color: #E6E6E6
             border-radius: .4rem
             transition-duration: .25s
             transition-property: color, background-color
+            padding: .5rem 1rem
+            @media (min-width: 480px)
+                padding: .5rem 1.5rem
+                font-size: 1.4rem
         input
             display: none
             &:checked
@@ -141,16 +168,22 @@
                     background-color: $colorRed
                     color: $colorWhite
 
-
-
-
     &__row
         display: flex
         flex-wrap: wrap
+        @media (min-width: 768px)
+            border-top: solid 1px #E6E6E6
 
     &__card
-        width: 33.333%
-
+        width: 100%
+        @media (min-width: 480px)
+            width: 50%
+        @media (min-width: 768px)
+            .card
+                border-left: none
+                border-top: none
+        @media (min-width: 1024px)
+            width: 33.333%
 
     &__nav
         display: flex
@@ -160,13 +193,11 @@
         margin: 3rem 0 0 0
         padding: 0 0 0 1.5rem
 
-
     &__nav-item
 
     &__nav-link
         color: $colorRed
         margin: 0 0 0 2rem
-
 
 .catalog__row._list
     .catalog__card
@@ -177,17 +208,33 @@
         border-bottom: solid 1px #E6E6E6
         flex-direction: row
         gap: 2rem
+        @media (max-width: 479px)
+            gap: 1rem
         &__favorite
             right: 0
         &__img
             width: 20rem
+            @media (max-width: 767px)
+                width: 15rem
+                flex-shrink: 0
+            @media (max-width: 374px)
+                width: 9rem
         &__head
-            display: flex
+            flex-direction: row
+            justify-content: space-between
             align-items: center
             gap: 1rem
             margin: 0 0 2rem 0
+            @media (max-width: 574px)
+                flex-wrap: wrap
+            &-row
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                gap: 1rem
         &__code
             margin: 0
+            align-self: flex-start
         &__title
             margin: 0
         &__content
@@ -198,13 +245,24 @@
         &__body
             flex-direction: row
             gap: 2rem
+            @media (max-width: 1023px)
+                flex-wrap: wrap
         &__trigger
             display: none
         &__actions
             order: 2
+            max-width: 25rem
+            margin: 0 0 0 auto
+            @media (max-width: 479px)
+                max-width: 100%
+                margin: 0
         &__chars
             flex: 1 1 auto
             order: 1
+            min-width: 20rem
+            @media (max-width: 479px)
+                min-width: 0
+                width: 100%
             &-close
                 display: none
             &-list
@@ -221,3 +279,12 @@
                     opacity: 1
                     transform: translateY(0)
                     transition: all 0s
+                @media (max-width: 374px)
+                    li
+                        display: block
+                        &:before
+                            display: none
+                        span
+                            padding: 0
+                        p
+                            padding: .5rem 0 0 0

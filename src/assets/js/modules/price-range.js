@@ -1,7 +1,7 @@
 import wnumb from 'wnumb';
 import noUiSlider from '../../../../node_modules/nouislider/dist/nouislider';
 
-const priceSlider = document.querySelector('[data-range-price]');
+const priceSlider = document.querySelector('.price-range__line');
 const priceStart = document.querySelector('[data-range-from]');
 const priceEnd = document.querySelector('[data-range-to]');
 

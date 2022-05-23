@@ -1,0 +1,165 @@
+<form action="/" method="get" class="filter">
+    <button type="button" class="btn btn--red filter__trigger js-drop">Фильтр</button>
+    <div class="filter__wrapper _spollers">
+        <div class="filter__sections">
+            <div class="filter__section">
+                <div class="filter__head _spoller">
+                    <div class="filter__title">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2C1 1.44772 1.44772 1 2 1H4.5C5.05229 1 5.5 1.44772 5.5 2V4.5C5.5 5.05229 5.05229 5.5 4.5 5.5H2C1.44772 5.5 1 5.05229 1 4.5V2ZM4.5 2H2V4.5H4.5V2ZM6.5 2C6.5 1.44772 6.94772 1 7.5 1H10C10.5523 1 11 1.44772 11 2V4.5C11 5.05229 10.5523 5.5 10 5.5H7.5C6.94772 5.5 6.5 5.05229 6.5 4.5V2ZM10 2H7.5V4.5H10V2ZM1 7.5C1 6.94772 1.44772 6.5 2 6.5H4.5C5.05229 6.5 5.5 6.94772 5.5 7.5V10C5.5 10.5523 5.05229 11 4.5 11H2C1.44772 11 1 10.5523 1 10V7.5ZM4.5 7.5H2V10H4.5V7.5ZM6.5 7.5C6.5 6.94772 6.94772 6.5 7.5 6.5H10C10.5523 6.5 11 6.94772 11 7.5V10C11 10.5523 10.5523 11 10 11H7.5C6.94772 11 6.5 10.5523 6.5 10V7.5ZM10 7.5H7.5V10H10V7.5Z" fill="#E30614"/>
+                        </svg>
+                        <h2>Категории</h2>
+                    </div>
+                    <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                </div>
+                <div class="filter__item filter__item--spoller">
+                    <div class="filter__body">
+                        <div class="category-filter js-toggle">
+                            <div class="category-filter__items">
+                                <a href="#" class="category-filter__item">
+                                    <p>Серия 5.904-1 выпуск 1:</p>
+                                    <span>Детали крепления воздуховодов</span>
+                                    <i>95</i>
+                                </a>
+                                <a href="#" class="category-filter__item">
+                                    <p>Серия 4.903-10 выпуск 4,5,6:</p>
+                                    <span>Изделия и детали трубопроводов для тепловых сетей</span>
+                                    <i>15</i>
+                                </a>
+                                <a href="#" class="category-filter__item js-toggle__item">
+                                    <p>Серия 4.900-9 Выпуск 1:</p>
+                                    <span>Узлы и детали трубопроводов из пластмассовых труб для систем водоснабжения и канализации </span>
+                                    <i>245</i>
+                                </a>
+                                <a href="#" class="category-filter__item js-toggle__item">
+                                    <p>Серия 3.900-9:</p>
+                                    <span>Опорные конструкции и средства крепления трубопроводов</span>
+                                    <i>2</i>
+                                </a>
+                                <a href="#" class="category-filter__item js-toggle__item">
+                                    <p>Л8-508.000 - Л8-524.000:</p>
+                                    <span>Опоры и подвески трубопроводов Дн < 89мм</span>
+                                    <i>652</i>
+                                </a>
+                            </div>
+                            <button type="button" class="category-filter__btn js-toggle__trigger" data-show="Показать все" data-hide="Скрыть"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__section">
+                <div class="filter__head">
+                    <div class="filter__title">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4.99998C1.44772 4.99998 1 5.44768 1 5.99998C1 6.55228 1.44772 6.99998 2 6.99998C2.55228 6.99998 3 6.55228 3 5.99998C3 5.44768 2.55228 4.99998 2 4.99998Z" fill="red"/>
+                            <path d="M1 9.49998C1 8.94768 1.44772 8.49998 2 8.49998C2.55228 8.49998 3 8.94768 3 9.49998C3 10.0523 2.55228 10.5 2 10.5C1.44772 10.5 1 10.0523 1 9.49998Z" fill="red"/>
+                            <path d="M5 5.49998C4.72386 5.49998 4.5 5.72384 4.5 5.99998C4.5 6.27612 4.72386 6.49998 5 6.49998H11C11.2761 6.49998 11.5 6.27612 11.5 5.99998C11.5 5.72384 11.2761 5.49998 11 5.49998H5Z" fill="red"/>
+                            <path d="M4.5 9.49998C4.5 9.22384 4.72386 8.99998 5 8.99998H11C11.2761 8.99998 11.5 9.22384 11.5 9.49998C11.5 9.77612 11.2761 9.99998 11 9.99998H5C4.72386 9.99998 4.5 9.77612 4.5 9.49998Z" fill="red"/>
+                            <path d="M5 1.99998C4.72386 1.99998 4.5 2.22384 4.5 2.49998C4.5 2.77612 4.72386 2.99998 5 2.99998H11C11.2761 2.99998 11.5 2.77612 11.5 2.49998C11.5 2.22384 11.2761 1.99998 11 1.99998H5Z" fill="red"/>
+                            <path d="M2 1.57141C1.44772 1.57141 1 2.01911 1 2.57141C1 3.12371 1.44772 3.57141 2 3.57141C2.55228 3.57141 3 3.12371 3 2.57141C3 2.01911 2.55228 1.57141 2 1.57141Z" fill="red"/>
+                        </svg>
+                        <h2>Фильтры</h2>
+                    </div>
+                </div>
+                <div class="filter__item">
+                    <div class="filter__head filter__head--small _spoller">
+                        <div class="filter__title">
+                            <h3>Цена, руб.</h3>
+                        </div>
+                        <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                    </div>
+                    <div class="filter__body filter__body--spoller">
+                        <div class="price-range">
+                            <div class="price-range__items">
+                                <label class="price-range__item">
+                                    <span>от</span>
+                                    <input data-range-from type="number" autocomplete="off" name="values">
+                                </label>
+                                <label class="price-range__item">
+                                    <span>до</span>
+                                    <input data-range-to type="number" autocomplete="off" name="values">
+                                </label>
+                            </div>
+                            <div class="price-range__line" data-min="100" data-max="120000" data-start="7405" data-end="110000"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__item">
+                    <div class="filter__head filter__head--small _spoller">
+                        <div class="filter__title">
+                            <h3>Тип продукта</h3>
+                        </div>
+                        <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                    </div>
+                    <div class="filter__body filter__body--spoller">
+                        <div class="filter__row">
+                            <label class="check radio">
+                                <input type="radio" class="check__input" name="product-type">
+                                <span class="check__body"></span>
+                                <span class="check__text">Тип 1</span>
+                            </label>
+                            <label class="check radio">
+                                <input type="radio" class="check__input" name="product-type">
+                                <span class="check__body"></span>
+                                <span class="check__text">Тип 2</span>
+                            </label>
+                            <label class="check radio">
+                                <input type="radio" class="check__input" name="product-type">
+                                <span class="check__body"></span>
+                                <span class="check__text">Тип 3</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__item">
+                    <div class="filter__head filter__head--small _spoller">
+                        <div class="filter__title">
+                            <h3>Бренд</h3>
+                        </div>
+                        <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                    </div>
+                    <div class="filter__body filter__body--spoller">
+                        <div class="filter__row">
+                            <label class="check radio">
+                                <input type="radio" class="check__input" name="product-brand">
+                                <span class="check__body"></span>
+                                <span class="check__text">Бренд 1</span>
+                            </label>
+                            <label class="check radio">
+                                <input type="radio" class="check__input" name="product-brand">
+                                <span class="check__body"></span>
+                                <span class="check__text">Бренд 2</span>
+                            </label>
+                            <label class="check radio">
+                                <input type="radio" class="check__input" name="product-brand">
+                                <span class="check__body"></span>
+                                <span class="check__text">Бренд 3</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__item">
+                    <div class="filter__body">
+                        <label class="check checkbox">
+                            <input type="checkbox" class="check__input">
+                            <span class="check__body"></span>
+                            <span class="check__text">Выбор покупателей</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__item">
+                    <div class="filter__body">
+                        <label class="check checkbox">
+                            <input type="checkbox" class="check__input">
+                            <span class="check__body"></span>
+                            <span class="check__text">Лучшая цена</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__bottom">
+            <button type="reset" class="btn btn--gray">Сбросить фильтры</button>
+        </div>
+    </div>
+</form>

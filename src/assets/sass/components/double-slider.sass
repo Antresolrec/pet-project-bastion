@@ -1,0 +1,124 @@
+.double-slider
+    min-width: 0
+    display: flex
+    align-self: flex-start
+    user-select: none
+    &-wrapper
+        min-width: 0
+        flex: 1 1 auto
+    &__thumb
+        width: 8.8rem
+        flex-shrink: 0
+        min-width: 0
+        position: relative
+        padding: 3.6rem 0 3.2rem
+        .swiper-slide-thumb-active
+            .double-slider__thumb-slide
+                border-color: $colorBlack
+                opacity: 1
+        @media (max-width: 1023px)
+            display: none
+        &-container
+            height: 46.4rem
+        &-button
+            cursor: pointer
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            display: flex
+            justify-content: center
+            align-items: center
+            z-index: 2
+            width: 3.2rem
+            height: 3.2rem
+            border-radius: 50%
+            border: solid 0.1rem transparent
+            transition: border-color .25s
+            @media (any-hover: hover)
+                &:hover
+                    border-color: $colorBlack
+            svg
+                width: 100%
+                height: 100%
+            &.lock
+                display: none
+        .button-thumb-prev
+            top: 0
+        .button-thumb-next
+            bottom: 0
+        .swiper-slide
+            padding: 0 0 1.3rem 0
+        &-slide
+            width: 8.8rem
+            height: 8.8rem
+            padding: 0.6rem
+            border: solid 0.1rem
+            border-color: transparent
+            cursor: pointer
+            transition: border-color .25s, opacity .25s
+            opacity: .5
+            @media (any-hover: hover)
+                &:hover
+                    border-color: $colorBlack
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+    &__main
+        min-width: 0
+        position: relative
+        align-self: center
+        @media (any-hover: hover)
+            &:hover
+                .slide-btn
+                    opacity: 1
+        &-container
+            width: 64.285%
+            @media (max-width: 1023px)
+                width: 100%
+        .slide-btn
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 2
+            opacity: 0
+            @media (max-width: 1023px)
+                display: none
+            &.lock
+                display: none
+            &--prev
+                left: 6%
+                &:active
+                    transform: translateY(-50%) !important
+            &--next
+                right: 6%
+                transform: translateY(-50%) rotate(-180deg)
+                &:active
+                    transform: translateY(-50%) rotate(-180deg) !important
+            &.swiper-button-disabled
+                display: none
+
+
+        .swiper-slide
+            display: flex
+            justify-content: center
+            align-self: center
+        &-slide
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: zoom-in
+            @media (max-width: 1023px)
+                max-width: 46.8rem
+                padding: 0 3.2rem
+            img
+                max-width: 100%
+                height: 100%
+                width: 100%
+                object-fit: contain
+        .swiper-pagination
+            position: relative
+            margin: 4.8rem 0 0 0
+            @media (min-width: 1024px)
+                display: none

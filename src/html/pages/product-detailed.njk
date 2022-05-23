@@ -1,0 +1,180 @@
+{% extends "layouts/_default.njk" %}
+{% from 'mixins/card.njk' import card %}
+
+{% set breadCrumbs = [{
+    name: 'Главная',
+    link: '#'
+}, {
+    name: 'Каталог',
+    link: '#'
+}, {
+    name: 'Карточка товара',
+    link: '#'
+}] %}
+
+{% block content %}
+<section class="section-page section-page--no-top">
+    <div class="container">
+        <div class="product">
+            <div class="product__head">
+                <ul class="tags-product">
+                    <li class="tags-product__item tags-product__item--pink">Хит</li>
+                    <li class="tags-product__item tags-product__item--orange">Скидка</li>
+                    <li class="tags-product__item tags-product__item--green">Акция</li>
+                </ul>
+                <div class="product__acticle">Артикул: 1218Н</div>
+            </div>
+            <div class="product__wrapper">
+                <div class="product__media">
+                    <div class="double-slider-wrapper">
+                        <div class="double-slider">
+                            <div class="double-slider__thumb">
+                                <div class="double-slider__thumb-button button-thumb-prev">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0135 12C16.1033 11.9995 16.1923 12.0153 16.2755 12.0464C16.3586 12.0775 16.4342 12.1232 16.498 12.1811L21.7993 16.9294C21.8629 16.9877 21.9134 17.0568 21.9478 17.1329C21.9823 17.209 22 17.2905 22 17.3729C22 17.4552 21.9823 17.5368 21.9478 17.6129C21.9134 17.689 21.8629 17.7581 21.7993 17.8163C21.7357 17.8746 21.6601 17.9207 21.577 17.9523C21.4938 17.9838 21.4047 18 21.3147 18C21.2248 18 21.1356 17.9838 21.0525 17.9523C20.9694 17.9207 20.8938 17.8746 20.8302 17.8163L16.0135 13.499L11.1899 17.7351C11.1271 17.799 11.0506 17.8504 10.9652 17.8859C10.8797 17.9215 10.7871 17.9406 10.6933 17.942C10.5994 17.9433 10.5062 17.927 10.4196 17.8939C10.3329 17.8608 10.2547 17.8117 10.1897 17.7496C10.1248 17.6876 10.0745 17.614 10.042 17.5333C10.0096 17.4527 9.99568 17.3668 10.0012 17.281C10.0066 17.1953 10.0314 17.1114 10.0739 17.0348C10.1164 16.9582 10.1757 16.8904 10.2481 16.8357L15.5494 12.1749C15.6742 12.0648 15.8401 12.0022 16.0135 12Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="double-slider__thumb-button button-thumb-next">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0135 20C16.1033 20.0005 16.1923 19.9847 16.2755 19.9536C16.3586 19.9225 16.4342 19.8768 16.498 19.8189L21.7993 15.0706C21.8629 15.0123 21.9134 14.9432 21.9478 14.8671C21.9823 14.791 22 14.7095 22 14.6271C22 14.5448 21.9823 14.4632 21.9478 14.3871C21.9134 14.311 21.8629 14.2419 21.7993 14.1837C21.7357 14.1254 21.6601 14.0793 21.577 14.0477C21.4938 14.0162 21.4047 14 21.3147 14C21.2248 14 21.1356 14.0162 21.0525 14.0477C20.9694 14.0793 20.8938 14.1254 20.8302 14.1837L16.0135 18.501L11.1899 14.2649C11.1271 14.201 11.0506 14.1496 10.9652 14.1141C10.8797 14.0785 10.7871 14.0594 10.6933 14.058C10.5994 14.0567 10.5062 14.073 10.4196 14.1061C10.3329 14.1392 10.2547 14.1883 10.1897 14.2504C10.1248 14.3124 10.0745 14.386 10.042 14.4667C10.0096 14.5473 9.99568 14.6332 10.0012 14.719C10.0066 14.8047 10.0314 14.8886 10.0739 14.9652C10.1164 15.0418 10.1757 15.1096 10.2481 15.1643L15.5494 19.8251C15.6742 19.9352 15.8401 19.9978 16.0135 20Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="double-slider__thumb-container swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="double-slider__thumb-slide">
+                                                <img src="content/card-01.png" alt="preview">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="double-slider__thumb-slide">
+                                                <img src="content/card-02.png" alt="preview">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="double-slider__thumb-slide">
+                                                <img src="content/card-03.png" alt="preview">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="double-slider__thumb-slide">
+                                                <img src="content/card-04.png" alt="preview">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="double-slider__thumb-slide">
+                                                <img src="content/card-01.png" alt="preview">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="double-slider__thumb-slide">
+                                                <img src="content/card-02.png" alt="preview">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="double-slider__main js-zoom-container js-gallery">
+                                <button type="button" class="slide-btn slide-btn--prev button-prev btn-prev btn-slider"></button>
+                                <button type="button" class="slide-btn slide-btn--next button-next btn-next btn-slider"></button>
+                                <div class="swiper double-slider__main-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="content/card-01-big.png" class="double-slider__main-slide js-zoom-item" data-fancybox="product-gallery">
+                                                <img data-zoom-big="content/card-01-big.png" data-zoom-size="250%" src="content/card-01-big.png" alt="photo">
+                                                <span class="js-zoom-image"></span>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="content/card-02-big.png" class="double-slider__main-slide js-zoom-item" data-fancybox="product-gallery">
+                                                <img data-zoom-big="content/card-02-big.png" data-zoom-size="250%" src="content/card-02-big.png" alt="photo">
+                                                <span class="js-zoom-image"></span>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="content/card-03-big.png" class="double-slider__main-slide js-zoom-item" data-fancybox="product-gallery">
+                                                <img data-zoom-big="content/card-03-big.png" data-zoom-size="250%" src="content/card-03-big.png" alt="photo">
+                                                <span class="js-zoom-image"></span>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="content/card-04-big.png" class="double-slider__main-slide js-zoom-item" data-fancybox="product-gallery">
+                                                <img data-zoom-big="content/card-04-big.png" data-zoom-size="250%" src="content/card-04-big.png" alt="photo">
+                                                <span class="js-zoom-image"></span>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="content/card-01-big.png" class="double-slider__main-slide js-zoom-item" data-fancybox="product-gallery">
+                                                <img data-zoom-big="content/card-01-big.png" data-zoom-size="250%" src="content/card-01-big.png" alt="photo">
+                                                <span class="js-zoom-image"></span>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="content/card-02-big.png" class="double-slider__main-slide js-zoom-item" data-fancybox="product-gallery">
+                                                <img data-zoom-big="content/card-02-big.png" data-zoom-size="250%" src="content/card-02-big.png" alt="photo">
+                                                <span class="js-zoom-image"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination">
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-product">
+                    <div class="content-product__head content-product__block">
+                        <div class="product__title">Опора корпусная хомутовая КХ</div>
+                        <div class="code-product">
+                            <span>ГОСТ 14911-82</span>
+                        </div>
+                    </div>
+                    <div class="content-product__body content-product__block">
+                        <div class="content-product__row">
+                            <div class="product__price">
+                                <div class="product__price-title">Цена</div>
+                                <div class="product__price-row">
+                                    <!-- <div class="product__price-actual">8 499 руб.</div> -->
+                                    <div class="product__price-red">8 499 руб.</div>
+                                    <div class="product__price-old">11 700 руб.</div>
+                                </div>
+                            </div>
+                            <div class="calc-product">
+                                <div class="count-field">
+                                    <div class="count-field__btn count-field__less"></div>
+                                    <div class="count-field__input">
+                                        <input type="number" data-max="3" data-min="1">
+                                    </div>
+                                    <div class="count-field__btn count-field__more"></div>
+                                </div>
+                                <div class="calc-product__left-quantity"></div>
+                            </div>
+                        </div>
+                        <div class="content-product__row">
+                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                <span>В корзину</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-product__description content-product__block js-toggle">
+                        <div class="content-product__description-title">Описание</div>
+                        <div class="content-product__description-text">
+                            <p>Корпусные хомутовые опоры трубопроводов для крепления труб диаметром от 57 до 630 мм. Состоят из корпуса с приваренными ребрами жесткости и двух либо четырех полухомутов. Изготавливаются согласно ОСТ 36-146-88 тип КХ из углеродистой стали ВСт3пс, ст. 20, 09Г2С, и нержавеющей 12Х18Н10Т.</p>
+                            <p class="js-toggle__item">Корпусные хомутовые опоры трубопроводов для крепления труб диаметром от 57 до 630 мм. Состоят из корпуса с приваренными ребрами жесткости и двух либо четырех полухомутов. Изготавливаются согласно ОСТ 36-146-88 тип КХ из углеродистой стали ВСт3пс, ст. 20, 09Г2С, и нержавеющей 12Х18Н10Т.</p>
+                        </div>
+                        <button type="button" class="category-filter__btn js-toggle__trigger" data-show="Раскрыть полное описание" data-hide="Скрыть полное описание"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-page">
+    <div class="container">
+        {% include 'blocks/_popular.njk' %}
+    </div>
+</section>
+{% endblock %}

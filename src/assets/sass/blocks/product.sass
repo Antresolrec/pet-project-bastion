@@ -1,0 +1,149 @@
+.product
+    .calc-product
+        max-width: 25rem
+        margin: 0 0 0 auto
+    &__head
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 1rem 0 2rem 0
+
+    &__acticle
+        color: $colorGray
+        line-height: normal
+
+
+    &__wrapper
+        display: flex
+        border-top: solid 1px #E6E6E6
+        border-bottom: solid 1px #E6E6E6
+
+
+    &__media
+        width: 60rem
+        flex-shrink: 0
+        align-self: flex-start
+        padding: 1rem 0
+
+
+    &__title
+        font-size: 3rem
+        font-weight: 500
+        letter-spacing: 1px
+        line-height: 1.2
+        margin: 0 0 .5rem 0
+
+    &__price
+
+
+    &__price-title
+        font-size: 1.4rem
+        color: $colorGray
+        margin: 0 0 .5rem 0
+
+
+    &__price-row
+        display: flex
+        flex-wrap: wrap
+        gap: 1rem
+        white-space: nowrap
+        line-height: normal
+        align-items: center
+
+
+    &__price-actual
+        font-weight: 500
+        font-size: 2.4rem
+
+
+    &__price-red
+        font-weight: 500
+        font-size: 2.4rem
+        color: $colorRed
+
+
+    &__price-old
+        text-decoration: line-through
+        color: $colorGray
+
+
+
+.content-product
+    border-left: solid 1px #E6E6E6
+
+    &__block
+        padding: 2rem 0 2rem 3rem
+        border-bottom: solid 1px #E6E6E6
+        &:last-child
+            border-bottom: none
+
+    &__head
+        
+
+
+    &__body
+
+
+
+    &__row
+        display: flex
+        gap: 2rem
+        margin: 0 0 1rem 0
+        &:last-child
+            margin: 0
+
+
+    &__description
+        line-height: 1.2
+
+
+
+    &__description-title
+        font-size: 1.4rem
+        color: $colorGray
+        margin: 0 0 1rem 0
+
+
+    &__description-text
+        p
+            margin: 0 0 1.5rem 0
+
+.tags-product
+    display: flex
+    gap: 1rem
+    justify-content: flex-start
+    color: $colorWhite
+    
+    @media (max-width: 574px)
+        gap: .5rem
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: .5rem 2rem
+        text-transform: uppercase
+        @media (max-width: 574px)
+            padding: .5rem 1rem
+
+    &__item--pink
+        background-color: rgba(#FD7272, .7)
+
+    &__item--orange
+        background-color: rgba(#E67E22, .7)
+
+    &__item--green
+        background-color: rgba(#27AE60, .7)
+
+
+.code-product
+    color: $colorRed
+    font-size: 1.4rem
+    margin: 0 0 1rem 0
+    display: flex
+    flex-wrap: wrap
+    gap: 1rem
+    white-space: nowrap
+    span
+        border-radius: .2rem
+        background: rgba($colorRed, .1)
+        padding: .5rem

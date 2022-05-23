@@ -1,0 +1,44 @@
+.price-range
+    &__items
+        display: flex
+        margin-bottom: 2.3rem
+        border: solid 0.1rem #E6E6E6
+        gap: 1rem
+    &__item
+        height: 4.2rem
+        background: $colorWhite
+        font-size: 1.8rem
+        padding: 0 1rem
+        display: inline-flex
+        gap: 0.5rem
+        align-items: center
+        width: 50%
+        border-right: solid 0.1rem #E6E6E6
+        &:last-child
+            border-right: none
+        input
+            color: $colorGray
+            font-size: 1.8rem
+            display: inline-block
+            width: 100%
+    .noUi-target
+        background: #F2F3F4
+        border: none
+        height: 0.2rem
+        margin: 0 .7rem 0 1rem
+    .noUi-connects
+        background: #E6E6E6
+    .noUi-connect
+        background: $colorRed
+    .noUi-handle
+        border-radius: 50%
+        background: $colorRed
+        width: 16px !important
+        height: 16px !important
+        box-shadow: none
+        border: none
+        cursor: pointer
+        right: -7px !important
+        &::after,
+        &::before
+            display: none

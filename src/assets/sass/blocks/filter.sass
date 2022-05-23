@@ -1,0 +1,140 @@
+.filter
+    position: relative
+    z-index: 2
+    @media (max-width: 767px)
+        &._open
+            .filter
+                &__wrapper
+                    opacity: 1
+                    transform: translateY(0)
+                    pointer-events: all
+    &__trigger
+        @media (min-width: 768px)
+            display: none
+
+    &__wrapper
+        @media (max-width: 767px)
+            border: solid 1px $colorRed
+            position: absolute
+            top: 100%
+            left: 0
+            width: 100%
+            opacity: 0
+            transform: translateY(-10px)
+            transition-duration: .25s
+            pointer-events: none
+            transition-property: opacity,transform
+            z-index: 2
+            background-color: $colorWhite
+            padding: 0 0 2rem 0
+
+    &__section
+        &:last-child
+            .filter__item
+                &:last-child
+                    border-bottom: none
+
+    &__head
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        padding: 1.4rem 1.5rem
+        border-bottom: solid 1px #E6E6E6
+        &._spoller
+            cursor: pointer
+            &:before
+                content: ''
+                z-index: 1
+                @include fullSize
+        &._active
+            .filter
+                &__head-arrow
+                    transform: rotate(180deg)
+        &--small
+            padding: 2rem 1.5rem
+            border-bottom: none
+            @media (max-width: 767px)
+                padding: 1.5rem
+            .filter
+                &__title
+                    font-size: 1.7rem
+                    @media (min-width: 768px)
+                        font-size: 1.8rem
+                    @media (min-width: 1024px)
+                        font-size: 2rem
+
+    &__title
+        display: flex
+        align-items: center
+        gap: 1rem
+        font-weight: 500
+        line-height: 1.1
+        font-size: 2rem
+        @media (min-width: 768px)
+            font-size: 2.2rem
+        @media (min-width: 1024px)
+            font-size: 2.6rem
+        svg
+            width: 2rem
+            height: 2rem
+            flex-shrink: 0
+
+    &__head-arrow
+        width: 2rem
+        height: 2rem
+        flex-grow: 0
+        transition: transform .5s
+
+    &__item
+        border-bottom: solid 1px #E6E6E6
+        &--spoller
+            border-bottom: none
+            display: none
+            .filter__body
+                border-bottom: solid 1px #E6E6E6
+
+    &__body
+        padding: 2rem 1.5rem
+        @media (max-width: 767px)
+            padding: 1.5rem
+        &--spoller
+            padding: 0 1.5rem 2rem
+            display: none
+            border-bottom: none
+
+    &__row
+        display: flex
+        flex-direction: column
+        gap: 1.5rem
+
+    &__bottom
+        margin: 2rem 0 0 0
+        padding: 0 1.5rem
+
+.category-filter
+
+    &__items
+
+    &__item
+        font-size: 1.6rem
+        line-height: 1.2
+        margin: 0 0 1.5rem 0
+        &:hover
+            span
+                text-decoration: underline
+        p
+            color: $colorGray
+        span
+            display: inline
+        i
+            background-color: $colorRed
+            color: $colorWhite
+            padding: .1rem .5rem
+            border-radius: 5rem
+            font-size: 1.2rem
+            line-height: normal
+            font-style: normal
+
+    &__btn
+        color: $colorRed

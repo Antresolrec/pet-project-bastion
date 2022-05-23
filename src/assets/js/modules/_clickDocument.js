@@ -6,6 +6,7 @@ import addToFavorite from './addToFavorite';
 import removeFromCart from './removeFromCart';
 import removeFromFavorite from './removeFromFavorite';
 import setCatalog from './switch-catalog';
+import jsToggle from './clickToggle';
 
 document.addEventListener('click', (e) => {
   const target = e.target;
@@ -17,4 +18,5 @@ document.addEventListener('click', (e) => {
   removeFromFavorite(target);
   checkOpenCatalog();
   setCatalog(target);
+  jsToggle(target);
 });

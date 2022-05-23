@@ -18,7 +18,7 @@ import './modules/select';
 
 // import './modules/calendar';
 
-// import './modules/zoom-image';
+import './modules/zoom-image';
 
 // import './modules/popups';
 
@@ -30,7 +30,7 @@ import './modules/calc-product';
 
 // import './modules/tooltips-mini';
 
-// import './modules/price-range';
+import './modules/price-range';
 
 // import './modules/filter';
 
@@ -58,7 +58,7 @@ import './modules/swiper/static-slider';
 
 // import './modules/swiper/selections-slider';
 
-// import './modules/swiper/product-slider';
+import './modules/swiper/product-slider';
 
 // import './modules/swiper/selections-ordering-slider';
 

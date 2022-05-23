@@ -28,7 +28,6 @@
         padding: 1rem
         width: 100%
 
-
     &__btns
         width: 100%
         @media (min-width: 768px)
@@ -82,3 +81,55 @@
         pointer-events: none
         transform: translateY(1.5rem)
         transition: all .25s
+
+.check
+    display: inline-flex
+    align-items: center
+    line-height: normal
+    cursor: pointer
+    gap: 1rem
+    font-size: 1.4rem
+    @media (min-width: 768px)
+        font-size: 1.7rem
+    &:hover
+        .check__body
+            border-color: $colorBlack
+        .check__text
+            color: $colorBlack
+    &__input
+        display: none
+        &:checked
+            ~.check__body
+                border-color: $colorBlack
+                &:before
+                    opacity: 1
+            ~.check__text
+                color: $colorBlack
+    &__body
+        width: 2.5rem
+        height: 2.5rem
+        align-self: flex-start
+        flex-shrink: 0
+        border-radius: 2px
+        border: solid 1px $colorGray
+        position: relative
+        transition: border-color .25s
+        &:before
+            content: ''
+            @include centered
+            width: 70%
+            height: 70%
+            background-color: $colorRed
+            border-radius: 1px
+            opacity: 0
+            transition: opacity .25s
+    &__text
+        color: $colorGray
+        transition: color .25s
+
+.radio
+    .check
+        &__body
+            border-radius: 50%
+            &:before
+                border-radius: 50%
