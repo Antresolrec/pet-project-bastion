@@ -1,4 +1,5 @@
 import checkCart from './checkCart';
+import { toNumber, getValue } from './getNumber';
 
 export default function addToCart(target) {
   if (target.closest('.js-add-to-cart')) {
@@ -27,18 +28,8 @@ export default function addToCart(target) {
     const popupTitle = popup.querySelector('.card-popup__title');
     const popupPrice = popup.querySelector('.card-popup__price');
     const popupCount = popup.querySelector('.card-popup__count');
-
     const sumCart = document.querySelector('.sum-cart');
-    const getSum = sumCart.textContent;
-
     const countCart = document.querySelector('.count-cart');
-    const getValue = countCart.textContent;
-
-    const sumN = Number(getSum);
-    const PriceN = Number(price);
-    const PriceSaleN = Number(priceSale);
-    const countN = Number(count);
-    const valueN = Number(getValue);
 
     popupImg.setAttribute('src', img);
     popupCode.innerText = `${code}`;
@@ -46,7 +37,7 @@ export default function addToCart(target) {
     popupPrice.innerText = `${price}${priceSale}руб.`;
     popupCount.innerText = `${count}шт.`;
 
-    const countCartUpd = valueN + countN;
+    const countCartUpd = toNumber(getValue(countCart)) + toNumber(count);
     countCart.innerText = `${countCartUpd}`;
 
     const popupCartList = document.querySelector('.js-cart-list');
@@ -68,7 +59,11 @@ export default function addToCart(target) {
 
     popupCartList.append(cardMini);
 
-    const sumCartUpd = sumN + PriceN * count + PriceSaleN * count;
+    const sumCartUpd =
+      toNumber(getValue(sumCart)) +
+      toNumber(price) * count +
+      toNumber(priceSale) * count;
+
     sumCart.innerText = `${sumCartUpd}`;
 
     checkCart();

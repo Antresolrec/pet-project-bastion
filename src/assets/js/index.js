@@ -46,7 +46,7 @@ import './modules/custom-drop-menu';
 
 // import './modules/file-image-uploader';
 
-// import './modules/phone-mask/phone-mask';
+import './modules/phone-mask/phone-mask';
 
 // import './modules/swiper/gift-slider';
 
@@ -87,3 +87,9 @@ import './modules/addToCart';
 import './modules/checkFavorite';
 
 import './modules/switch-catalog';
+
+import './modules/checkCartList';
+
+import './modules/sumCart';
+
+import './modules/form-validator';

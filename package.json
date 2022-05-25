@@ -79,6 +79,7 @@
     "svg4everybody": "2.1.9",
     "swiper": "^8.0.3",
     "tippy.js": "^6.3.7",
+    "validator": "^13.7.0",
     "vee-validate": "^3.4.3",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.3",

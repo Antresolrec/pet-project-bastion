@@ -1,20 +1,22 @@
 <div id="recall-popup" class="recall-popup popup-template">
     <h3 class="popup-template__title">Заказать звонок</h3>
     <div class="popup-template__content">
-        <form action="/" method="post" class="form">
+        <form action="/" method="post" class="form js-form">
             <div class="form__items">
                 <div class="form__item">
                     <label class="label-form fly-placeholder">
-                        <input type="text" name="Name" class="label-form__input">
-                        <span class="label-form__placeholder">Ваше Имя</span>
+                        <input type="text" name="Name" class="label-form__input" data-required="text" autocomplete="off">
+                        <span class="label-form__placeholder">Ваше Имя <sup>*</sup></span>
                         <img class="label-form__icon" src="content/icons/icon-user.svg" alt="">
+                        <span class="label-form__error">Заполните поле</span>
                     </label>
                 </div>
                 <div class="form__item">
                     <label class="label-form fly-placeholder">
-                        <input type="tel" name="Phone" class="label-form__input">
-                        <span class="label-form__placeholder">Номер телефона</span>
+                        <input type="tel" name="Phone" class="label-form__input phone-mask" data-required="tel" autocomplete="off">
+                        <span class="label-form__placeholder">Номер телефона <sup>*</sup></span>
                         <img class="label-form__icon" src="content/icons/icon-phone.svg" alt="">
+                        <span class="label-form__error">Заполните поле</span>
                     </label>
                 </div>
             </div>

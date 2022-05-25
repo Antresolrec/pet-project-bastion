@@ -167,6 +167,10 @@
                 ~span
                     background-color: $colorRed
                     color: $colorWhite
+        @media (any-hover: hover)
+            &:hover
+                span
+                    transform: translateY(-1px)
 
     &__row
         display: flex

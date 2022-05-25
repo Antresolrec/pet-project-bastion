@@ -47,6 +47,9 @@
                 content: ''
                 z-index: 1
                 @include fullSize
+            @media (any-hover: hover)
+                &:hover
+                    text-decoration: underline
         &._active
             .filter
                 &__head-arrow
@@ -138,3 +141,6 @@
 
     &__btn
         color: $colorRed
+        @media (any-hover: hover)
+            &:hover
+                text-decoration: underline

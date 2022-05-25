@@ -1,0 +1,211 @@
+{% extends "layouts/_default.njk" %}
+{% from 'mixins/card.njk' import card %}
+
+{% set breadCrumbs = [{
+    name: 'Главная',
+    link: '#'
+}, {
+    name: 'Каталог',
+    link: '#'
+}] %}
+
+{% block content %}
+<section class="section-page section-page--no-top">
+    <div class="container">
+        <div class="head-section">
+            <h2 class="title-section">Корзина</h2>
+        </div>
+        <form action="/" method="post" class="js-form">
+            <div class="cart">
+                <div class="cart__wrapper">
+                    <div class="cart__content">
+                        <div class="cart__note">
+                            <img class="icon-page" src="content/icons/icon-alert.svg" alt="">
+                            <p>Извините, но указанное  ранее количество товара недоступно. Установлено ближайшее доступное значение.</p>
+                        </div>
+                        <div class="cart__row">
+                            <div class="item-cart">
+                                <div class="item-cart__head">
+                                    <a href="#" class="item-cart__img">
+                                        <img src="content/card-01.png" alt="photo">
+                                    </a>
+                                    <div class="item-cart__content">
+                                        <div class="code-product">
+                                            <span>ГОСТ 14911-82</span>
+                                        </div>
+                                        <a href="#" class="item-cart__title">Опора подвижная ОПБ2</a>
+                                        <div class="item-cart__price"><span>2849</span> руб.</div>
+                                    </div>
+                                </div>
+                                <div class="item-cart__body">
+                                    <div class="item-cart__total"><span></span> руб.</div>
+                                    <div class="calc-product">
+                                        <div class="count-field">
+                                            <div class="count-field__btn count-field__less"></div>
+                                            <div class="count-field__input">
+                                                <input type="number" data-max="100" data-min="1" value="52">
+                                            </div>
+                                            <div class="count-field__btn count-field__more"></div>
+                                        </div>
+                                        <div class="calc-product__left-quantity"></div>
+                                    </div>
+                                    <button type="button" class="item-cart__delete js-delete">
+                                        <img class="icon-page" src="content/icons/icon-trash.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item-cart">
+                                <div class="item-cart__head">
+                                    <a href="#" class="item-cart__img">
+                                        <img src="content/card-02.png" alt="photo">
+                                    </a>
+                                    <div class="item-cart__content">
+                                        <div class="code-product">
+                                            <span>ГОСТ 154911-822</span>
+                                        </div>
+                                        <a href="#" class="item-cart__title">Опора трубчатая ТР</a>
+                                        <div class="item-cart__price"><span>5849</span> руб. </div>
+                                    </div>
+                                </div>
+                                <div class="item-cart__body">
+                                    <div class="item-cart__total"><span></span> руб.</div>
+                                    <div class="calc-product">
+                                        <div class="count-field">
+                                            <div class="count-field__btn count-field__less"></div>
+                                            <div class="count-field__input">
+                                                <input type="number" data-max="100" data-min="1" value="33">
+                                            </div>
+                                            <div class="count-field__btn count-field__more"></div>
+                                        </div>
+                                        <div class="calc-product__left-quantity"></div>
+                                    </div>
+                                    <button type="button" class="item-cart__delete js-delete">
+                                        <img class="icon-page" src="content/icons/icon-trash.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item-cart">
+                                <div class="item-cart__head">
+                                    <a href="#" class="item-cart__img">
+                                        <img src="content/card-03.png" alt="photo">
+                                    </a>
+                                    <div class="item-cart__content">
+                                        <div class="code-product">
+                                            <span>ГОСТ 14911-82</span>
+                                        </div>
+                                        <a href="#" class="item-cart__title">Опора подвижная ОПБ2</a>
+                                        <div class="item-cart__price"><span>16849</span> руб. </div>
+                                    </div>
+                                </div>
+                                <div class="item-cart__body">
+                                    <div class="item-cart__total"><span></span> руб.</div>
+                                    <div class="calc-product">
+                                        <div class="count-field">
+                                            <div class="count-field__btn count-field__less"></div>
+                                            <div class="count-field__input">
+                                                <input type="number" data-max="100" data-min="1" value="100">
+                                            </div>
+                                            <div class="count-field__btn count-field__more"></div>
+                                        </div>
+                                        <div class="calc-product__left-quantity"></div>
+                                    </div>
+                                    <button type="button" class="item-cart__delete js-delete">
+                                        <img class="icon-page" src="content/icons/icon-trash.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item-cart">
+                                <div class="item-cart__head">
+                                    <a href="#" class="item-cart__img">
+                                        <img src="content/card-04.png" alt="photo">
+                                    </a>
+                                    <div class="item-cart__content">
+                                        <div class="code-product">
+                                            <span>ГОСТ 154911-822</span>
+                                        </div>
+                                        <a href="#" class="item-cart__title">Опора трубчатая ТР</a>
+                                        <div class="item-cart__price"><span>4849</span> руб. </div>
+                                    </div>
+                                </div>
+                                <div class="item-cart__body">
+                                    <div class="item-cart__total"><span></span> руб.</div>
+                                    <div class="calc-product">
+                                        <div class="count-field">
+                                            <div class="count-field__btn count-field__less"></div>
+                                            <div class="count-field__input">
+                                                <input type="number" data-max="100" data-min="1">
+                                            </div>
+                                            <div class="count-field__btn count-field__more"></div>
+                                        </div>
+                                        <div class="calc-product__left-quantity"></div>
+                                    </div>
+                                    <button type="button" class="item-cart__delete js-delete">
+                                        <img class="icon-page" src="content/icons/icon-trash.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="cart__bottom">
+                            <button type="button" class="cart__clear js-delete-full">
+                                <img class="icon-page" src="content/icons/icon-trash.svg" alt="">
+                                <span>Очистить корзину</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="side-cart">
+                        <h2 class="cart__title">Заказ</h2>
+                        <div class="side-cart__wrapper">
+                            <div class="side-cart__title">Контактная информация</div>
+                            <div class="side-cart__items">
+                                <label class="label-form fly-placeholder">
+                                    <input type="text" class="label-form__input" data-required="text" autocomplete="off">
+                                    <span class="label-form__placeholder">ФИО <sup>*</sup></span>
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                                <label class="label-form fly-placeholder">
+                                    <input type="tel" class="label-form__input phone-mask" data-required="tel" autocomplete="off">
+                                    <span class="label-form__placeholder">Контактный телефон <sup>*</sup></span>
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                                <label class="label-form fly-placeholder">
+                                    <input type="email" class="label-form__input" data-required="email" autocomplete="off">
+                                    <span class="label-form__placeholder">Email <sup>*</sup></span>
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                                <label class="label-form fly-placeholder">
+                                    <input type="text" class="label-form__input" data-required="text" autocomplete="off">
+                                    <span class="label-form__placeholder">Организация / ИНН <sup>*</sup></span>
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                                <label class="label-form fly-placeholder">
+                                    <input type="text" class="label-form__input" data-required="text" autocomplete="off">
+                                    <span class="label-form__placeholder">Адрес доставки <sup>*</sup></span>
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                                <div class="side-cart__promo">
+                                    <label class="label-form label-form--border fly-placeholder">
+                                        <input type="text" class="label-form__input">
+                                        <span class="label-form__placeholder">Введите промокод</span>
+                                    </label>
+                                    <button type="button" class="btn btn--gray">Применить</button>
+                                </div>
+                            </div>
+                            <div class="cart__total">
+                                <span>Итого</span>
+                                <span class="cart__total-value"><span></span> руб.</span>
+                            </div>
+                            <div class="side-cart__btns">
+                                <button type="submit" class="btn btn--red">
+                                    <img src="content/icons/icon-cart-white.svg" alt="">
+                                    <span>Оформить заказ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__empty">Корзина пуста. Добавьте товары из <a href="#">каталога</a> и вернитесь в корзину.</div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -1,22 +1,24 @@
-<div class="recall-request">
+<div class="recall-request section-page section-page--no-bottom">
     <div class="container">
-        <form action="/" method="post" class="form form--row">
+        <form action="#" method="post" class="form form--row js-form">
             <div class="form__items">
                 <div class="form__item">
                     <label class="label-form fly-placeholder">
-                        <input type="text" name="Name" class="label-form__input">
-                        <span class="label-form__placeholder">Ваше Имя</span>
+                        <input type="text" name="Name" class="label-form__input" data-required="text" autocomplete="off">
+                        <span class="label-form__placeholder">Ваше Имя <sup>*</sup></span>
+                        <span class="label-form__error">Заполните поле</span>
                     </label>
                 </div>
                 <div class="form__item">
                     <label class="label-form fly-placeholder">
-                        <input type="tel" name="Phone" class="label-form__input">
-                        <span class="label-form__placeholder">Ваш телефон</span>
+                        <input type="tel" name="Phone" class="label-form__input phone-mask" data-required="tel" autocomplete="off">
+                        <span class="label-form__placeholder">Ваш телефон <sup>*</sup></span>
+                        <span class="label-form__error">Заполните поле</span>
                     </label>
                 </div>
             </div>
             <div class="form__btns">
-                <button type="submit" class="btn btn--red">Заказать звонок</button>
+                <button type="submit" class="btn btn--red js-form__submit">Заказать звонок</button>
                 <p class="form__policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
             </div>
         </form>

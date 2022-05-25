@@ -7,6 +7,9 @@ import removeFromCart from './removeFromCart';
 import removeFromFavorite from './removeFromFavorite';
 import setCatalog from './switch-catalog';
 import jsToggle from './clickToggle';
+import deleteCard from './deleteCard';
+import checkCartList from './checkCartList';
+import sumCart from './sumCart';
 
 document.addEventListener('click', (e) => {
   const target = e.target;
@@ -19,4 +22,7 @@ document.addEventListener('click', (e) => {
   checkOpenCatalog();
   setCatalog(target);
   jsToggle(target);
+  deleteCard(target);
+  checkCartList();
+  sumCart();
 });

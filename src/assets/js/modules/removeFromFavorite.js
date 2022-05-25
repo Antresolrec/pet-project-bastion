@@ -1,4 +1,5 @@
 import checkFavorite from './checkFavorite';
+import { toNumber, getValue } from './getNumber';
 
 export default function removeFromFavorite(target) {
   if (target.closest('.js-delete-favorite')) {
@@ -14,9 +15,7 @@ export default function removeFromFavorite(target) {
       }
     });
     countCart.forEach((el) => {
-      const getValue = el.textContent;
-      const valueN = Number(getValue);
-      const countCartUpd = valueN - 1;
+      const countCartUpd = toNumber(getValue(el)) - 1;
       el.innerText = `${countCartUpd}`;
     });
     card.remove();

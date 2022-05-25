@@ -47,6 +47,17 @@
 .label-form
     position: relative
     display: block
+    &--border
+        &._fly
+            .label-form
+                &__placeholder
+                    padding: .4rem 0 0 1rem
+        .label-form
+            &__input
+                border: solid 1px #B3B3B3
+                padding: 1.4rem 0 0 1rem
+            &__placeholder
+                padding: 0 1rem
     &._fly
         .label-form
             &__placeholder
@@ -62,8 +73,11 @@
         left: 0
         color: $colorGray
         transform: translateY(1.3rem)
-        transition: transform .25s, font-size .25s
+        transition-property: transform, font-size, padding
+        transition-duration: .25s
         pointer-events: none
+        sup
+            color: $colorRed
 
     &__input
         width: 100%
@@ -71,6 +85,10 @@
         background-color: $colorWhite
         height: 4.2rem
         padding: .8rem 0 0 0
+        &._error
+            ~.label-form__error
+                transform: translateY(0)
+                opacity: 1
 
     &__icon
         position: absolute
@@ -81,6 +99,20 @@
         pointer-events: none
         transform: translateY(1.5rem)
         transition: all .25s
+
+    &__error
+        position: absolute
+        top: 100%
+        right: 0
+        color: $colorRed
+        margin: .2rem 0 0 0
+        opacity: 0
+        transform: translateY(-5px)
+        transition-property: opacity, transform
+        transition-duration: .25s
+        font-size: 1rem
+        @media (min-width: 768px)
+            font-size: 1.2rem
 
 .check
     display: inline-flex

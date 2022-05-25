@@ -1,0 +1,2251 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bastion</title>
+        <meta name="description" content="Bastion">
+        <meta name="keywords" content="Bastion">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Bastion" />
+        <meta property="og:description" content="Bastion" />
+        <meta property="og:image" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <link rel="shortcut icon" href="">
+        <link href="css/main.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__fix compensate-for-scrollbar js-lock-padding">
+                    <div class="top-header">
+                        <div class="top-header__row container">
+                            <div class="nav-header">
+                                <button type="button" class="nav-header__burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div class="nav-header__wrapper">
+                                    <nav class="nav-header__body">
+                                        <ul class="menu">
+                                            <li><a class="menu__link" href="#">О нас</a></li>
+                                            <li><a class="menu__link" href="#">Производство</a></li>
+                                            <li><a class="menu__link" href="#">Выгоды для вас</a></li>
+                                            <li><a class="menu__link" href="#">Гарантии</a></li>
+                                            <li><a class="menu__link" href="#">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="top-header__actions">
+                                <a href="tel:+74993807890" class="header__phone">
+                                    <img class="icon-page icon-page--small" src="content/icons/icon-phone.svg" alt="" aria-hidden="true">
+                                    <span>+7 (499) 380-78-90</span>
+                                </a>
+                                <div class="location-page">
+                                    <input type="hidden" value="Москва" class="location-page__input">
+                                    <button class="location-page__trigger">
+                                        <img class="icon-page icon-page--small" src="content/icons/icon-location.svg" alt="" aria-hidden="true">
+                                        <span>Москва</span>
+                                    </button>
+                                    <ul class="location-page__list">
+                                        <li>Москва</li>
+                                        <li>Санкт-Петербург</li>
+                                        <li>Казань</li>
+                                    </ul>
+                                </div>
+                                <a href="mailto:info@bastion.pro" class="header__mail">
+                                    <img class="icon-page icon-page--small" src="content/icons/icon-mail.svg" alt="" aria-hidden="true">
+                                    <span>info@bastion.pro</span>
+                                </a>
+                                <!-- <div class="actions-header">
+                        <button type="button" class="actions-header__trigger popup-custom-trigger" data-fancybox="popup-favorite" data-src="#popup-favorite" data-type="clone">
+                            <span class="actions-header__icon icon-page">
+                                <span class="count-favorite">0</span>
+                                <img src="content/icons/icon-star.svg" alt="" aria-hidden="true">
+                            </span>
+                        </button>
+                        <button type="button" class="actions-header__trigger popup-custom-trigger" data-fancybox="popup-cart" data-src="#popup-cart" data-type="clone">
+                            <span class="actions-header__icon icon-page">
+                                <span class="count-cart">0</span>
+                                <img src="content/icons/icon-cart.svg" alt="" aria-hidden="true">
+                            </span>
+                        </button>
+                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__wrapper">
+                        <div class="header__row container">
+                            <a href="#" class="logo-page">
+                                <img src="content/logo-page.png" alt="логотип компании">
+                                <p>
+                        <span>Федеральный</span>
+                        <span>производитель</span>
+                        <span>металлоизделий</span>
+                    </p>
+                            </a>
+                            <div class="catalog-header">
+                                <button type="button" class="catalog-header__trigger btn js-drop">
+                                    <img class="icon-page" src="content/icons/icon-catalog.svg" alt="" aria-hidden="true">
+                                    <span>Каталог</span>
+                                </button>
+                                <div class="catalog-header__wrapper">
+                                    <div class="container">
+                                        <div class="catalog-header__layer js-drop-close"></div>
+                                        <div class="catalog-header__content">
+                                            <button type="button" class="catalog-header__close icon-page js-drop-close">
+                                                <img src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                            </button>
+                                            <ul class="menu-catalog-header catalog-header__column">
+                                                <li class="menu-catalog-header__item _open">
+                                                    <button class="menu-catalog-header__link js-submenu-trigger">Анкерные тяги</button>
+                                                    <div class="submenu-catalog-header catalog-header__column">
+                                                        <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                            <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                            <span>Назад</span>
+                                                        </button>
+                                                        <a href="">Анкерные тяги</a>
+                                                        <img src="content/header-menu-01.jpg" alt="фото товара">
+                                                        <ul>
+                                                            <li class="submenu-catalog-header__item _open">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-catalog-header__item">
+                                                    <button class="menu-catalog-header__link js-submenu-trigger">Арматура трубопроводов</button>
+                                                    <div class="submenu-catalog-header catalog-header__column">
+                                                        <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                            <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                            <span>Назад</span>
+                                                        </button>
+                                                        <a href="">Арматура трубопроводов</a>
+                                                        <img src="content/header-menu-02.png" alt="фото товара">
+                                                        <ul>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-catalog-header__item">
+                                                    <button class="menu-catalog-header__link js-submenu-trigger">Анкерные тяги2</button>
+                                                    <div class="submenu-catalog-header catalog-header__column">
+                                                        <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                            <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                            <span>Назад</span>
+                                                        </button>
+                                                        <a href="">Анкерные тяги2</a>
+                                                        <img src="content/header-menu-01.jpg" alt="фото товара">
+                                                        <ul>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-catalog-header__item">
+                                                    <button class="menu-catalog-header__link js-submenu-trigger">Арматура трубопроводов2</button>
+                                                    <div class="submenu-catalog-header catalog-header__column">
+                                                        <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                            <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                            <span>Назад</span>
+                                                        </button>
+                                                        <a href="">Арматура трубопроводов2</a>
+                                                        <img src="content/header-menu-02.png" alt="фото товара">
+                                                        <ul>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-catalog-header__item">
+                                                    <button class="menu-catalog-header__link js-submenu-trigger">Анкерные тяги3</button>
+                                                    <div class="submenu-catalog-header catalog-header__column">
+                                                        <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                            <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                            <span>Назад</span>
+                                                        </button>
+                                                        <a href="">Анкерные тяги3</a>
+                                                        <img src="content/header-menu-01.jpg" alt="фото товара">
+                                                        <ul>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="menu-catalog-header__item">
+                                                    <button class="menu-catalog-header__link js-submenu-trigger">Арматура трубопроводов3</button>
+                                                    <div class="submenu-catalog-header catalog-header__column">
+                                                        <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                            <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                            <span>Назад</span>
+                                                        </button>
+                                                        <a href="">Арматура трубопроводов3</a>
+                                                        <img src="content/header-menu-02.png" alt="фото товара">
+                                                        <ul>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.1904-1 выпуск 12:</span>
+                                                                    Блоки пружинные цветные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="submenu-catalog-header__item">
+                                                                <button class="submenu-catalog-header__link js-lastmenu-trigger">
+                                                                    <span>Серия 5.904-1 выпуск 1:</span>
+                                                                    Блоки пружинные
+                                                                </button>
+                                                                <ul class="lastmenu-catalog-header catalog-header__column">
+                                                                    <button type="button" class="menu-catalog-header__back js-menu-step-back">
+                                                                        <img class="icon-page icon-page--small" src="content/icons/icon-arr-left-small.svg" alt="" aria-hidden="true">
+                                                                        <span>Назад</span>
+                                                                    </button>
+                                                                    <li>
+                                                                        <a href="#">Для дома и сада</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Блоки пружинные</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Крепления трубопроводов</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Быстровозводимые здания</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Высотные сооружения</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Двери</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-header">
+                                <button type="button" class="search-header__trigger js-drop">
+                                    <img class="icon-page" src="content/icons/icon-search.svg" alt="" aria-hidden="true">
+                                </button>
+                                <form class="search-header__form" action="/" method="get">
+                                    <label class="search-header__label">
+                                        <button type="submit" class="search-header__btn">
+                                            <img class="icon-page" src="content/icons/icon-search.svg" alt="" aria-hidden="true">
+                                        </button>
+                                        <input type="search" name="q" placeholder="Поиск по названию..." class="search-header__input">
+                                        <span class="search-header__border"></span>
+                                    </label>
+                                </form>
+                            </div>
+                            <button type="button" data-da=".nav-header__wrapper,767,last" class="btn btn--red" data-fancybox="recall-popup" data-src="#recall-popup">
+                                <span>Заказать звонок</span>
+                            </button>
+                            <div class="actions-header">
+                                <div class="actions-header__item favorite-header">
+                                    <button type="button" class="actions-header__trigger js-drop">
+                                        <span class="actions-header__icon icon-page">
+                                <span class="count-favorite">0</span>
+                                        <img src="content/icons/icon-star.svg" alt="" aria-hidden="true">
+                                        </span>
+                                        <p>Избранное</p>
+                                    </button>
+                                    <div class="actions-header__wrapper">
+                                        <div class="actions-header__content">
+                                            <div class="actions-header__head">
+                                                <span class="actions-header__head-title">Всего в избранном</span>
+                                                <span class="actions-header__head-value"><span class="count-favorite">0</span> шт</span>
+                                            </div>
+                                            <div class="actions-header__body js-favorite-list">
+                                                <!-- <div class="actions-header__unit">
+                                        <a href="#" class="actions-header__info">
+                                            <img src="content/cart-mini-01.png" alt="фото товара">
+                                            <p>
+                                                Опора подвижная ОПБ2
+                                                <span>849.9 руб.</span>
+                                            </p>
+                                        </a>
+                                        <a href="#" class="icon-page icon-page--small">
+                                            <img src="content/icons/icon-to-cart.svg" alt="" aria-hidden="true">
+                                        </a>
+                                    </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actions-header__item cart-header">
+                                    <button type="button" class="actions-header__trigger js-drop">
+                                        <span class="actions-header__icon icon-page">
+                                <span class="count-cart">0</span>
+                                        <img src="content/icons/icon-cart.svg" alt="" aria-hidden="true">
+                                        </span>
+                                        <p>Корзина</p>
+                                    </button>
+                                    <div class="actions-header__wrapper">
+                                        <div class="actions-header__content">
+                                            <div class="actions-header__head">
+                                                <span class="actions-header__head-title">Итого в корзине</span>
+                                                <span class="actions-header__head-value"><span class="sum-cart">0</span> руб.</span>
+                                            </div>
+                                            <div class="actions-header__body js-cart-list">
+                                                <!-- <div class="actions-header__unit">
+                                        <a href="#" class="actions-header__info">
+                                            <img src="content/cart-mini-01.png" alt="фото товара">
+                                            <p>
+                                                Опора подвижная ОПБ2
+                                                <span>849.9 руб. / 1 шт.</span>
+                                            </p>
+                                        </a>
+                                        <a href="#" class="icon-page icon-page--small">
+                                            <img src="content/icons/icon-trash.svg" alt="" aria-hidden="true">
+                                        </a>
+                                    </div> -->
+                                            </div>
+                                            <div class="actions-header__bottom">
+                                                <a href="#" class="btn btn--red">Оформить заказ</a>
+                                                <a href="#" download class="btn btn--icon">
+                                                    <span class="btn__icon">
+                                            <img class="icon-page" src="content/icons/icon-doc.svg" alt="" aria-hidden="true">
+                                            <img class="btn__icon-sub" src="content/icons/icon-download.svg" alt="" aria-hidden="true">
+                                        </span>
+                                                    <span>Коммерческое предложение</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="container">
+                <div class="bread-crumbs">
+
+
+                    <span class="bread-crumbs__item">
+                        <a href="">Главная</a>
+                    </span>
+
+
+
+                    <span class="bread-crumbs__item">Каталог</span>
+
+
+                </div>
+
+            </div>
+
+
+            <main class="page">
+
+                <section class="section-page section-page--no-top">
+                    <div class="container">
+                        <div class="catalog">
+                            <div class="catalog__head">
+                                <div class="catalog__title">
+                                    <a href="#" class="catalog__back">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.60369 3.08754C5.83149 3.31534 5.8315 3.68469 5.60369 3.9125L3.09953 6.41669H12.1912C12.5134 6.41669 12.7746 6.67786 12.7746 7.00002C12.7746 7.32219 12.5134 7.58335 12.1912 7.58335H3.09953L5.60369 10.0875C5.8315 10.3154 5.83149 10.6847 5.60369 10.9125C5.37588 11.1403 5.00654 11.1403 4.77873 10.9125L1.27876 7.4125C1.05096 7.18469 1.05096 6.81535 1.27876 6.58754L4.77873 3.08754C5.00654 2.85974 5.37588 2.85973 5.60369 3.08754Z" fill="#E30614" />
+                                        </svg>
+                                    </a>
+                                    <h1 class="title-section">Опоры трубопроводов</h1>
+                                </div>
+                                <div class="catalog__actions">
+                                    <select class="select js-select">
+                                        <option data-placeholder="true">Сортировка</option>
+                                        <option value="value1">По возрастанию цены</option>
+                                        <option value="value2">По умолчанию</option>
+                                        <option value="value3">По убыванию цены</option>
+                                        <option value="value4">Сначала новые товары</option>
+                                        <option value="value5">Сначала старые товары</option>
+                                    </select>
+                                    <div class="catalog__switch">
+                                        <label title="Отобразить в ряд">
+                                            <input type="radio" name="cards-switch" class="cards-switch-table" checked>
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2C1 1.44772 1.44772 1 2 1H4.5C5.05229 1 5.5 1.44772 5.5 2V4.5C5.5 5.05229 5.05229 5.5 4.5 5.5H2C1.44772 5.5 1 5.05229 1 4.5V2ZM4.5 2H2V4.5H4.5V2ZM6.5 2C6.5 1.44772 6.94772 1 7.5 1H10C10.5523 1 11 1.44772 11 2V4.5C11 5.05229 10.5523 5.5 10 5.5H7.5C6.94772 5.5 6.5 5.05229 6.5 4.5V2ZM10 2H7.5V4.5H10V2ZM1 7.5C1 6.94772 1.44772 6.5 2 6.5H4.5C5.05229 6.5 5.5 6.94772 5.5 7.5V10C5.5 10.5523 5.05229 11 4.5 11H2C1.44772 11 1 10.5523 1 10V7.5ZM4.5 7.5H2V10H4.5V7.5ZM6.5 7.5C6.5 6.94772 6.94772 6.5 7.5 6.5H10C10.5523 6.5 11 6.94772 11 7.5V10C11 10.5523 10.5523 11 10 11H7.5C6.94772 11 6.5 10.5523 6.5 10V7.5ZM10 7.5H7.5V10H10V7.5Z" fill="#E30614" />
+                                            </svg>
+                                            <span></span>
+                                        </label>
+                                        <label title="Отобразить списком">
+                                            <input type="radio" name="cards-switch" class="cards-switch-list">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 4.99998C1.44772 4.99998 1 5.44768 1 5.99998C1 6.55228 1.44772 6.99998 2 6.99998C2.55228 6.99998 3 6.55228 3 5.99998C3 5.44768 2.55228 4.99998 2 4.99998Z" fill="white" />
+                                                <path d="M1 9.49998C1 8.94768 1.44772 8.49998 2 8.49998C2.55228 8.49998 3 8.94768 3 9.49998C3 10.0523 2.55228 10.5 2 10.5C1.44772 10.5 1 10.0523 1 9.49998Z" fill="white" />
+                                                <path d="M5 5.49998C4.72386 5.49998 4.5 5.72384 4.5 5.99998C4.5 6.27612 4.72386 6.49998 5 6.49998H11C11.2761 6.49998 11.5 6.27612 11.5 5.99998C11.5 5.72384 11.2761 5.49998 11 5.49998H5Z" fill="white" />
+                                                <path d="M4.5 9.49998C4.5 9.22384 4.72386 8.99998 5 8.99998H11C11.2761 8.99998 11.5 9.22384 11.5 9.49998C11.5 9.77612 11.2761 9.99998 11 9.99998H5C4.72386 9.99998 4.5 9.77612 4.5 9.49998Z" fill="white" />
+                                                <path d="M5 1.99998C4.72386 1.99998 4.5 2.22384 4.5 2.49998C4.5 2.77612 4.72386 2.99998 5 2.99998H11C11.2761 2.99998 11.5 2.77612 11.5 2.49998C11.5 2.22384 11.2761 1.99998 11 1.99998H5Z" fill="white" />
+                                                <path d="M2 1.57141C1.44772 1.57141 1 2.01911 1 2.57141C1 3.12371 1.44772 3.57141 2 3.57141C2.55228 3.57141 3 3.12371 3 2.57141C3 2.01911 2.55228 1.57141 2 1.57141Z" fill="white" />
+                                            </svg>
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__wrapper">
+                                <div class="catalog__side">
+                                    <form action="/" method="get" class="filter">
+                                        <button type="button" class="btn btn--red filter__trigger js-drop">Фильтр</button>
+                                        <div class="filter__wrapper _spollers">
+                                            <div class="filter__sections">
+                                                <div class="filter__section">
+                                                    <div class="filter__head _spoller">
+                                                        <div class="filter__title">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2C1 1.44772 1.44772 1 2 1H4.5C5.05229 1 5.5 1.44772 5.5 2V4.5C5.5 5.05229 5.05229 5.5 4.5 5.5H2C1.44772 5.5 1 5.05229 1 4.5V2ZM4.5 2H2V4.5H4.5V2ZM6.5 2C6.5 1.44772 6.94772 1 7.5 1H10C10.5523 1 11 1.44772 11 2V4.5C11 5.05229 10.5523 5.5 10 5.5H7.5C6.94772 5.5 6.5 5.05229 6.5 4.5V2ZM10 2H7.5V4.5H10V2ZM1 7.5C1 6.94772 1.44772 6.5 2 6.5H4.5C5.05229 6.5 5.5 6.94772 5.5 7.5V10C5.5 10.5523 5.05229 11 4.5 11H2C1.44772 11 1 10.5523 1 10V7.5ZM4.5 7.5H2V10H4.5V7.5ZM6.5 7.5C6.5 6.94772 6.94772 6.5 7.5 6.5H10C10.5523 6.5 11 6.94772 11 7.5V10C11 10.5523 10.5523 11 10 11H7.5C6.94772 11 6.5 10.5523 6.5 10V7.5ZM10 7.5H7.5V10H10V7.5Z" fill="#E30614" />
+                                                            </svg>
+                                                            <h2>Категории</h2>
+                                                        </div>
+                                                        <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                                                    </div>
+                                                    <div class="filter__item filter__item--spoller">
+                                                        <div class="filter__body">
+                                                            <div class="category-filter js-toggle">
+                                                                <div class="category-filter__items">
+                                                                    <a href="#" class="category-filter__item">
+                                                                        <p>Серия 5.904-1 выпуск 1:</p>
+                                                                        <span>Детали крепления воздуховодов</span>
+                                                                        <i>95</i>
+                                                                    </a>
+                                                                    <a href="#" class="category-filter__item">
+                                                                        <p>Серия 4.903-10 выпуск 4,5,6:</p>
+                                                                        <span>Изделия и детали трубопроводов для тепловых сетей</span>
+                                                                        <i>15</i>
+                                                                    </a>
+                                                                    <a href="#" class="category-filter__item js-toggle__item">
+                                                                        <p>Серия 4.900-9 Выпуск 1:</p>
+                                                                        <span>Узлы и детали трубопроводов из пластмассовых труб для систем водоснабжения и канализации </span>
+                                                                        <i>245</i>
+                                                                    </a>
+                                                                    <a href="#" class="category-filter__item js-toggle__item">
+                                                                        <p>Серия 3.900-9:</p>
+                                                                        <span>Опорные конструкции и средства крепления трубопроводов</span>
+                                                                        <i>2</i>
+                                                                    </a>
+                                                                    <a href="#" class="category-filter__item js-toggle__item">
+                                                                        <p>Л8-508.000 - Л8-524.000:</p>
+                                                                        <span>Опоры и подвески трубопроводов Дн < 89мм</span>
+                                                                        <i>652</i>
+                                                                    </a>
+                                                                </div>
+                                                                <button type="button" class="category-filter__btn js-toggle__trigger" data-show="Показать все" data-hide="Скрыть"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter__section">
+                                                    <div class="filter__head">
+                                                        <div class="filter__title">
+                                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2 4.99998C1.44772 4.99998 1 5.44768 1 5.99998C1 6.55228 1.44772 6.99998 2 6.99998C2.55228 6.99998 3 6.55228 3 5.99998C3 5.44768 2.55228 4.99998 2 4.99998Z" fill="red" />
+                                                                <path d="M1 9.49998C1 8.94768 1.44772 8.49998 2 8.49998C2.55228 8.49998 3 8.94768 3 9.49998C3 10.0523 2.55228 10.5 2 10.5C1.44772 10.5 1 10.0523 1 9.49998Z" fill="red" />
+                                                                <path d="M5 5.49998C4.72386 5.49998 4.5 5.72384 4.5 5.99998C4.5 6.27612 4.72386 6.49998 5 6.49998H11C11.2761 6.49998 11.5 6.27612 11.5 5.99998C11.5 5.72384 11.2761 5.49998 11 5.49998H5Z" fill="red" />
+                                                                <path d="M4.5 9.49998C4.5 9.22384 4.72386 8.99998 5 8.99998H11C11.2761 8.99998 11.5 9.22384 11.5 9.49998C11.5 9.77612 11.2761 9.99998 11 9.99998H5C4.72386 9.99998 4.5 9.77612 4.5 9.49998Z" fill="red" />
+                                                                <path d="M5 1.99998C4.72386 1.99998 4.5 2.22384 4.5 2.49998C4.5 2.77612 4.72386 2.99998 5 2.99998H11C11.2761 2.99998 11.5 2.77612 11.5 2.49998C11.5 2.22384 11.2761 1.99998 11 1.99998H5Z" fill="red" />
+                                                                <path d="M2 1.57141C1.44772 1.57141 1 2.01911 1 2.57141C1 3.12371 1.44772 3.57141 2 3.57141C2.55228 3.57141 3 3.12371 3 2.57141C3 2.01911 2.55228 1.57141 2 1.57141Z" fill="red" />
+                                                            </svg>
+                                                            <h2>Фильтры</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter__item">
+                                                        <div class="filter__head filter__head--small _spoller">
+                                                            <div class="filter__title">
+                                                                <h3>Цена, руб.</h3>
+                                                            </div>
+                                                            <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                                                        </div>
+                                                        <div class="filter__body filter__body--spoller">
+                                                            <div class="price-range">
+                                                                <div class="price-range__items">
+                                                                    <label class="price-range__item">
+                                                                        <span>от</span>
+                                                                        <input data-range-from type="number" autocomplete="off" name="values">
+                                                                    </label>
+                                                                    <label class="price-range__item">
+                                                                        <span>до</span>
+                                                                        <input data-range-to type="number" autocomplete="off" name="values">
+                                                                    </label>
+                                                                </div>
+                                                                <div class="price-range__line" data-min="100" data-max="120000" data-start="7405" data-end="110000"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter__item">
+                                                        <div class="filter__head filter__head--small _spoller">
+                                                            <div class="filter__title">
+                                                                <h3>Тип продукта</h3>
+                                                            </div>
+                                                            <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                                                        </div>
+                                                        <div class="filter__body filter__body--spoller">
+                                                            <div class="filter__row">
+                                                                <label class="check radio">
+                                                                    <input type="radio" class="check__input" name="product-type">
+                                                                    <span class="check__body"></span>
+                                                                    <span class="check__text">Тип 1</span>
+                                                                </label>
+                                                                <label class="check radio">
+                                                                    <input type="radio" class="check__input" name="product-type">
+                                                                    <span class="check__body"></span>
+                                                                    <span class="check__text">Тип 2</span>
+                                                                </label>
+                                                                <label class="check radio">
+                                                                    <input type="radio" class="check__input" name="product-type">
+                                                                    <span class="check__body"></span>
+                                                                    <span class="check__text">Тип 3</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter__item">
+                                                        <div class="filter__head filter__head--small _spoller">
+                                                            <div class="filter__title">
+                                                                <h3>Бренд</h3>
+                                                            </div>
+                                                            <img class="filter__head-arrow" src="content/icons/iocn-arr-down-black.svg" alt="">
+                                                        </div>
+                                                        <div class="filter__body filter__body--spoller">
+                                                            <div class="filter__row">
+                                                                <label class="check radio">
+                                                                    <input type="radio" class="check__input" name="product-brand">
+                                                                    <span class="check__body"></span>
+                                                                    <span class="check__text">Бренд 1</span>
+                                                                </label>
+                                                                <label class="check radio">
+                                                                    <input type="radio" class="check__input" name="product-brand">
+                                                                    <span class="check__body"></span>
+                                                                    <span class="check__text">Бренд 2</span>
+                                                                </label>
+                                                                <label class="check radio">
+                                                                    <input type="radio" class="check__input" name="product-brand">
+                                                                    <span class="check__body"></span>
+                                                                    <span class="check__text">Бренд 3</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter__item">
+                                                        <div class="filter__body">
+                                                            <label class="check checkbox">
+                                                                <input type="checkbox" class="check__input">
+                                                                <span class="check__body"></span>
+                                                                <span class="check__text">Выбор покупателей</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter__item">
+                                                        <div class="filter__body">
+                                                            <label class="check checkbox">
+                                                                <input type="checkbox" class="check__input">
+                                                                <span class="check__body"></span>
+                                                                <span class="check__text">Лучшая цена</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="filter__bottom">
+                                                <button type="reset" class="btn btn--gray">Сбросить фильтры</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="catalog__content">
+                                    <div class="catalog__types">
+                                        <label class="catalog__type">
+                                            <input type="checkbox" checked>
+                                            <span>ГОСТ 14911-82</span>
+                                        </label>
+                                        <label class="catalog__type">
+                                            <input type="checkbox">
+                                            <span>ОСТ 36-146-88</span>
+                                        </label>
+                                        <label class="catalog__type">
+                                            <input type="checkbox">
+                                            <span>НТС 65-06</span>
+                                        </label>
+                                        <label class="catalog__type">
+                                            <input type="checkbox">
+                                            <span>ОСТ 36-146-77</span>
+                                        </label>
+                                        <label class="catalog__type">
+                                            <input type="checkbox">
+                                            <span>НТС 65-06</span>
+                                        </label>
+                                    </div>
+                                    <div class="catalog__row js-catalog-row">
+                                        <div class="catalog__card">
+
+                                            <div data-key="1" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <ul class="card__tags tags-product">
+
+
+                                                    <li class="tags-product__item tags-product__item--pink">хит</li>
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--orange">скидка</li>
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--green">акция</li>
+
+
+                                                </ul>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-01.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 14911-82</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора подвижная ОПБ2</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+
+
+                                                            <div class="card__price card__price--red"><span>849</span> руб.</div>
+
+                                                            <div class="card__price card__price--old"><span>1000</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="2" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-04.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 14911-82</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора неподвижная ОПБ12 неподвижная</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+
+
+                                                            <div class="card__price card__price--red"><span>349</span> руб.</div>
+
+                                                            <div class="card__price card__price--old"><span>900</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="3" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <ul class="card__tags tags-product">
+
+
+                                                    <li class="tags-product__item tags-product__item--pink">хит</li>
+
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--green">акция</li>
+
+
+                                                </ul>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-02.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 251-49121-82</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора тавровая хомутовая ТХ тавровая опора хомутовая</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+                                                            <div class="card__price card__price--actual"><span>2000</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="4" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <ul class="card__tags tags-product">
+
+
+
+                                                    <li class="tags-product__item tags-product__item--orange">скидка</li>
+
+
+
+                                                </ul>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-03.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 211-421-825</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора хомутовая тавровая</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+                                                            <div class="card__price card__price--actual"><span>152</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="1" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <ul class="card__tags tags-product">
+
+
+                                                    <li class="tags-product__item tags-product__item--pink">хит</li>
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--orange">скидка</li>
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--green">акция</li>
+
+
+                                                </ul>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-01.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 14911-82</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора подвижная ОПБ2</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+
+
+                                                            <div class="card__price card__price--red"><span>849</span> руб.</div>
+
+                                                            <div class="card__price card__price--old"><span>1000</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="2" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-04.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 14911-82</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора неподвижная ОПБ12 неподвижная</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+
+
+                                                            <div class="card__price card__price--red"><span>349</span> руб.</div>
+
+                                                            <div class="card__price card__price--old"><span>900</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="3" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <ul class="card__tags tags-product">
+
+
+                                                    <li class="tags-product__item tags-product__item--pink">хит</li>
+
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--green">акция</li>
+
+
+                                                </ul>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-02.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 251-49121-82</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора тавровая хомутовая ТХ тавровая опора хомутовая</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+                                                            <div class="card__price card__price--actual"><span>2000</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="4" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <ul class="card__tags tags-product">
+
+
+
+                                                    <li class="tags-product__item tags-product__item--orange">скидка</li>
+
+
+
+                                                </ul>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-03.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 211-421-825</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора хомутовая тавровая</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+                                                            <div class="card__price card__price--actual"><span>152</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="catalog__card">
+
+                                            <div data-key="1" class="card">
+                                                <label class="card__favorite js-add-to-favorite">
+                                                    <input type="checkbox" name="favorite">
+                                                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.26519 0.894105C5.42033 0.893707 5.56223 0.981446 5.6312 1.12041L6.79786 3.47111L9.39971 3.85049C9.55297 3.87284 9.6803 3.98015 9.7283 4.1274C9.7763 4.27466 9.73666 4.4364 9.626 4.54476L7.73351 6.39816L8.1829 8.97285C8.20967 9.12625 8.14667 9.2815 8.02056 9.37285C7.89445 9.46421 7.7273 9.4757 7.58988 9.40246L5.26625 8.16397L2.94315 9.40244C2.80565 9.47574 2.63838 9.4642 2.51225 9.37271C2.38611 9.28122 2.32321 9.12581 2.35019 8.97234L2.80282 6.39816L0.907292 4.54501C0.796456 4.43665 0.756704 4.27479 0.804733 4.12742C0.852762 3.98005 0.980252 3.87269 1.13365 3.85045L3.74961 3.47112L4.90035 1.12229C4.9686 0.982971 5.11005 0.894504 5.26519 0.894105ZM5.2686 2.22281L4.38678 4.02273C4.32758 4.14357 4.21253 4.22739 4.07936 4.2467L2.0664 4.5386L3.52615 5.96571C3.62232 6.05973 3.66589 6.19515 3.6426 6.32761L3.29754 8.29007L5.07456 7.34272C5.19435 7.27886 5.33808 7.27885 5.45788 7.3427L7.23665 8.29078L6.89391 6.32711C6.87084 6.19492 6.91433 6.05985 7.0102 5.96596L8.46812 4.53815L6.46902 4.24666C6.33671 4.22736 6.22229 4.14438 6.16285 4.02461L5.2686 2.22281Z" fill="#B3B3B3" />
+                                                    </svg>
+                                                    <span class="card__favorite-add">В избранное</span>
+                                                    <span class="card__favorite-remove">Из избранного</span>
+                                                </label>
+
+                                                <ul class="card__tags tags-product">
+
+
+                                                    <li class="tags-product__item tags-product__item--pink">хит</li>
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--orange">скидка</li>
+
+
+
+
+
+
+                                                    <li class="tags-product__item tags-product__item--green">акция</li>
+
+
+                                                </ul>
+
+                                                <a href="#" class="card__img">
+                                                    <img src="content/card-01.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+                                                </a>
+                                                <div class="card__content">
+                                                    <div class="card__head">
+                                                        <div class="card__head-row">
+                                                            <div class="card__code code-product">
+                                                                <span>ГОСТ 14911-82</span>
+                                                            </div>
+                                                            <a href="#" class="card__title">Опора подвижная ОПБ2</a>
+                                                        </div>
+                                                        <div class="card__prices">
+
+
+
+                                                            <div class="card__price card__price--red"><span>849</span> руб.</div>
+
+                                                            <div class="card__price card__price--old"><span>1000</span> руб.</div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="card__chars">
+                                                            <div class="btn btn--gray card__trigger js-drop">Подробнее</div>
+                                                            <div class="card__chars-list">
+                                                                <div class="card__chars-close js-drop-close">
+                                                                    <img class="icon-page" src="content/icons/icon-close.svg" alt="" aria-hidden="true">
+                                                                </div>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>Тип</span>
+                                                                        <p>2</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Вертикальная нагрузка, кН</span>
+                                                                        <p>40</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Диаметр Дн, мм</span>
+                                                                        <p>478</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Ширина опоры, мм</span>
+                                                                        <p>460</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Масса блоков, кг</span>
+                                                                        <p>71</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Артикул</span>
+                                                                        <p>VS13420</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Единица измерения</span>
+                                                                        <p>шт</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__actions">
+                                                            <div class="calc-product">
+                                                                <div class="count-field">
+                                                                    <div class="count-field__btn count-field__less"></div>
+                                                                    <div class="count-field__input">
+                                                                        <input type="number" data-max="3" data-min="1">
+                                                                    </div>
+                                                                    <div class="count-field__btn count-field__more"></div>
+                                                                </div>
+                                                                <div class="calc-product__left-quantity"></div>
+                                                            </div>
+                                                            <div data-fancybox data-src="#popup-add-to-cart" class="btn btn--red js-add-to-cart">
+                                                                <img class="icon-page" src="content/icons/icon-cart-white.svg" alt="">
+                                                                <span>В корзину</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="catalog__nav">
+                                        <div class="catalog__nav-item">
+                                            <div class="sort-page">
+                                                <span>Выводить по</span>
+                                                <div class="sort-page__items">
+                                                    <label class="sort-page__item">
+                                                        <input type="radio" name="cards-sort" checked>
+                                                        <span>9</span>
+                                                    </label>
+                                                    <label class="sort-page__item">
+                                                        <input type="radio" name="cards-sort">
+                                                        <span>15</span>
+                                                    </label>
+                                                    <label class="sort-page__item">
+                                                        <input type="radio" name="cards-sort">
+                                                        <span>21</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__nav-item">
+                                            <ul class="pag-page">
+                                                <li>
+                                                    <a href="#" class="pag-page__item">
+                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.60369 3.08751C5.83149 3.31531 5.8315 3.68466 5.60369 3.91247L3.09953 6.41666H12.1912C12.5134 6.41666 12.7746 6.67782 12.7746 6.99999C12.7746 7.32216 12.5134 7.58332 12.1912 7.58332H3.09953L5.60369 10.0875C5.8315 10.3153 5.83149 10.6847 5.60369 10.9125C5.37588 11.1403 5.00654 11.1403 4.77873 10.9125L1.27876 7.41247C1.05096 7.18466 1.05096 6.81532 1.27876 6.58751L4.77873 3.08751C5.00654 2.85971 5.37588 2.8597 5.60369 3.08751Z" fill="#B3B3B3" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li><span href="#" class="pag-page__item _active">1</span></li>
+                                                <li><a href="#" class="pag-page__item">2</a></li>
+                                                <li><a href="#" class="pag-page__item">...</a></li>
+                                                <li><a href="#" class="pag-page__item">9</a></li>
+                                                <li><a href="#" class="pag-page__item">10</a></li>
+                                                <li>
+                                                    <a href="#" class="pag-page__item">
+                                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.39631 10.9125C8.16851 10.6847 8.1685 10.3153 8.39631 10.0875L10.9005 7.58334L1.80876 7.58334C1.48659 7.58334 1.22543 7.32218 1.22543 7.00001C1.22543 6.67784 1.48659 6.41668 1.80876 6.41668L10.9005 6.41668L8.39631 3.91249C8.1685 3.68468 8.1685 3.31533 8.39631 3.08753C8.62412 2.85972 8.99346 2.85973 9.22127 3.08753L12.7212 6.58753C12.949 6.81534 12.949 7.18468 12.7212 7.41249L9.22127 10.9125C8.99346 11.1403 8.62412 11.1403 8.39631 10.9125Z" fill="#B3B3B3" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="catalog__nav-link">Показать все товары</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="typography section-page section-page--no-bottom">
+                                <h3>Опоры трубопроводов от Бастион Груп - производитель металлических изделий №1</h3>
+                                <p>Надежность работы трубопровода в значительной мере зависит от правильности и прочности его крепления. Основные средства крепления трубопроводов — это опора, подвеска, кронштейны, скобы и другие части опорных конструкций. Мы изготавливаем типовые опоры трубопроводов по нижеперечисленным существующим нормативным документам, а также изготовим любые нестандартные опоры трубопроводов по чертежам заказчика.</p>
+                                <p>Жесткие и пружинные подвески рассчитаны на вертикальную нагрузку горизонтальных и вертикальных участков трубопровода. Основным материалом деталей является сталь 17гс-12, 17г1с-12, 14г2-12, 09г2с-14, 20, 20к и пр.</p>
+                                <p>Марка стали выбирается исходя от параметров окружающей среды, опоры могут использоваться при температуре от -60°C. Конструкции опор, представленные на сайте, отличаются между собой методом крепления с трубопроводом и несущей способностью.</p>
+                                <p>Подвески являются сборными устройствами, соединяются при помощи сварки. Сварные швы отвечают требованиям СНиП III-18-75, СНиП II-23-81. Резьбовые части опор обрабатываются антикоррозионной смазкой ПВК по ГОСТ 19537-83 или ее аналогом.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+            <div class="recall-request section-page section-page--no-bottom">
+                <div class="container">
+                    <form action="#" method="post" class="form form--row js-form">
+                        <div class="form__items">
+                            <div class="form__item">
+                                <label class="label-form fly-placeholder">
+                                    <input type="text" name="Name" class="label-form__input" data-required="text" autocomplete="off">
+                                    <span class="label-form__placeholder">Ваше Имя <sup>*</sup></span>
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                            </div>
+                            <div class="form__item">
+                                <label class="label-form fly-placeholder">
+                                    <input type="tel" name="Phone" class="label-form__input phone-mask" data-required="tel" autocomplete="off">
+                                    <span class="label-form__placeholder">Ваш телефон <sup>*</sup></span>
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__btns">
+                            <button type="submit" class="btn btn--red js-form__submit">Заказать звонок</button>
+                            <p class="form__policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__row _spollers">
+                        <a href="#" class="logo-page logo-page--white">
+                            <img src="content/logo-page-white.png" alt="логотип компании">
+                            <p>
+                    <span>Федеральный</span>
+                    <span>производитель</span>
+                    <span>металлоизделий</span>
+                </p>
+                        </a>
+                        <div class="footer__column">
+                            <div class="footer__nav">
+                                <a href="#">Главная</a>
+                                <a href="#">О компании</a>
+                                <a href="#">Доставка и оплата</a>
+                                <a href="#">Контакты</a>
+                                <a href="#">Реквизиты</a>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <button data-max="767" type="button" class="footer__column-title _spoller">
+                                <span>Направления деятельности</span>
+                                <img class="icon-page" src="content/icons/icon-arr-down.svg" alt="">
+                            </button>
+                            <div class="footer__column-content">
+                                <div class="footer__links">
+                                    <a href="#">BastionSteel</a>
+                                    <a href="#">BastionFire</a>
+                                    <a href="#">BastionProject</a>
+                                    <a href="#">BastionServices</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <button data-max="767" type="button" class="footer__column-title _spoller">
+                                <span>Способы оплаты</span>
+                                <img class="icon-page" src="content/icons/icon-arr-down.svg" alt="">
+                            </button>
+                            <div class="footer__column-content">
+                                <ul class="footer__payment">
+                                    <li>
+                                        <img src="content/icons/icon-pay-01.svg" alt="">
+                                        <p>Наличные</p>
+                                    </li>
+                                    <li>
+                                        <img src="content/icons/icon-pay-01.svg" alt="">
+                                        <p>Карты</p>
+                                    </li>
+                                    <li>
+                                        <img src="content/icons/icon-pay-03.svg" alt="">
+                                        <p>Электронные <br> деньги</p>
+                                    </li>
+                                    <li>
+                                        <img src="content/icons/icon-pay-03.svg" alt="">
+                                        <p>Банковский <br> перевод</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__columm">
+                            <button data-max="767" type="button" class="footer__column-title _spoller">
+                                <span>Контакты</span>
+                                <img class="icon-page" src="content/icons/icon-arr-down.svg" alt="">
+                            </button>
+                            <div class="footer__column-content">
+                                <div class="footer__contacts">
+                                    <a href="tel:+7(499)380-78-90" class="footer__contacts-phone">+7 (499) 380-78-90</a>
+                                    <a href="mailto:info@bastion.pro">info@bastion.pro</a>
+                                    <p>График работы:<span>ПН-ПТ 9:00 - 18:00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copyright">© 2010 - 2022 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
+                        <div class="socials-page">
+                            <a href="#">
+                                <img src="content/icons/icon-whatsapp.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="content/icons/icon-telegram.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="content/icons/icon-vk.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div id="recall-popup" class="recall-popup popup-template">
+                <h3 class="popup-template__title">Заказать звонок</h3>
+                <div class="popup-template__content">
+                    <form action="/" method="post" class="form js-form">
+                        <div class="form__items">
+                            <div class="form__item">
+                                <label class="label-form fly-placeholder">
+                                    <input type="text" name="Name" class="label-form__input" data-required="text" autocomplete="off">
+                                    <span class="label-form__placeholder">Ваше Имя <sup>*</sup></span>
+                                    <img class="label-form__icon" src="content/icons/icon-user.svg" alt="">
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                            </div>
+                            <div class="form__item">
+                                <label class="label-form fly-placeholder">
+                                    <input type="tel" name="Phone" class="label-form__input phone-mask" data-required="tel" autocomplete="off">
+                                    <span class="label-form__placeholder">Номер телефона <sup>*</sup></span>
+                                    <img class="label-form__icon" src="content/icons/icon-phone.svg" alt="">
+                                    <span class="label-form__error">Заполните поле</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__buttons">
+                            <button type="submit" class="btn btn--red">Заказать звонок</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="popup-add-to-cart" class="popup-add-to-cart popup-template">
+                <h3 class="popup-template__title">Товар добавлен в корзину</h3>
+                <div class="popup-template__content">
+                    <div class="card-popup">
+                        <div class="card-popup__img">
+                            <img src="" alt="фото">
+                        </div>
+                        <div class="card-popup__body">
+                            <div class="card-popup__code">
+                                <span></span>
+                            </div>
+                            <div class="card-popup__info">
+                                <span class="card-popup__title"></span>
+                                <span class="card-popup__price"></span>
+                                <span class="card-popup__count"></span>
+                            </div>
+                            <div class="popup-template__btns">
+                                <a href="#" class="btn btn--red">В корзину</a>
+                                <a href="#" class="btn">Коммерческое предложение</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="popup popup_cookie-warning">
+	<div class="popup__body close-cookie-warning">
+		<div class="popup__content">
+			<a href="" class="popup__close close-popup close-cookie-warning">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="popup__close-icon"
+						d="M29.1215 1.28976L15.8844 14.5268L28.7821 27.4244L27.4244 28.7821L14.5268 15.8844L1.28976 29.1215L0 27.8317L13.237 14.5947L0.271531 1.62918L1.62918 0.27153L14.5947 13.237L27.8317 0L29.1215 1.28976Z"
+						fill="black" />
+				</svg>
+			</a>
+            <div class="popup-template">
+                <div class="popup-template__section">
+                    <div class="popup-template__text">
+                        Для корректной работы сайта требуется включить cookies в браузере
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+        <div class="cookies-banner">
+    <div class="container">
+        <div class="cookies-banner__row">
+            <div class="cookies-banner__text">
+                Сайт использует файлы cookie. Подробная информация в правилах по <a href="#">обработке персональных данных.</a>      
+            </div>
+            <button class="btn btn--black cookies-button">
+                Продолжить работу
+            </button>
+            <div class="cookies-banner__close cookies-button">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0654 12.002L11.9987 11.0686L6.93238 6.00111L12 0.933797L11.0667 0.000463486L5.99916 5.06767L0.933335 0.000650406L0 0.933984L5.0658 6.00098L0 11.0665L0.933333 11.9998L5.99902 6.93442L11.0654 12.002Z" fill="#7E7E7E"/>
+                </svg>                
+            </div>
+        </div>
+    </div>
+</div> 
+        <div class="warning-banner">
+    <div class="container">
+        <div class="warning-banner__row">
+            <div class="warning-banner__text">
+                Для корректной работы сайта требуется включить cookies в браузере
+            </div>
+        </div>
+    </div>
+</div> -->
+        </div>
+        <script src="js/vendors.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+
+</html>
