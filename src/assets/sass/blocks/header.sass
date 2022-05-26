@@ -308,6 +308,7 @@
         padding: .5rem 1rem
         transition: color .25s, background-color .25s
         font-size: 2rem
+        cursor: pointer
         @media (min-width: 768px)
             font-size: 1.6rem
         @media (min-width: 1024px)
@@ -325,6 +326,7 @@
         margin: 0 0 2rem 0
         position: relative
         z-index: 2
+        cursor: pointer
         @media (min-width: 768px)
             display: none
 
@@ -370,6 +372,7 @@
         font-size: 1.6rem
         position: relative
         width: 100%
+        cursor: pointer
         span
             display: block
             color: rgba($colorGray, .8)
@@ -505,14 +508,6 @@
             &:hover
                 .actions-header__icon span
                     transform: translateY(-3px)
-        >p
-            font-size: 1.2rem
-            font-weight: 300
-            letter-spacing: 0.009em
-            margin: .5rem 0 0 0
-            @media (max-width: 1023px)
-                display: none
-
     &__icon
         position: relative
         display: inline-block
@@ -534,6 +529,15 @@
             border: solid .2rem $colorWhite
             z-index: 2
             transition: .25s transform
+
+    &__text
+        display: block
+        font-size: 1.2rem
+        font-weight: 300
+        letter-spacing: 0.009em
+        margin: .5rem 0 0 0
+        @media (max-width: 1023px)
+            display: none
 
     &__wrapper
         position: absolute
