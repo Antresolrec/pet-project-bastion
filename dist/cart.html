@@ -3,24 +3,24 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bastion</title>
         <meta name="description" content="Bastion">
         <meta name="keywords" content="Bastion">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Bastion" />
         <meta property="og:description" content="Bastion" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="content/logo-page-white.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="" />
-        <link rel="shortcut icon" href="">
+        <link rel="icon" sizes="any" type="image/svg+xml" href="content/icons/icon-pay-03.svg">
         <link href="css/main.min.css" rel="stylesheet">
     </head>
 
     <body>
         <div class="wrapper">
             <header class="header">
-                <div class="header__fix compensate-for-scrollbar js-lock-padding">
+                <div class="header__fix compensate-for-scrollbar">
                     <div class="top-header">
                         <div class="top-header__row container">
                             <div class="nav-header">
@@ -763,7 +763,7 @@
 
 
             <div class="container">
-                <div class="bread-crumbs">
+                <div class="bread-crumbs js-anim js-anim--opacity">
 
 
                     <span class="bread-crumbs__item">
@@ -785,18 +785,18 @@
                 <section class="section-page section-page--no-top">
                     <div class="container">
                         <div class="head-section">
-                            <h2 class="title-section">Корзина</h2>
+                            <h2 class="title-section js-anim">Корзина</h2>
                         </div>
                         <form action="/" method="post" class="js-form">
                             <div class="cart">
                                 <div class="cart__wrapper">
                                     <div class="cart__content">
-                                        <div class="cart__note">
+                                        <div class="cart__note js-anim">
                                             <img class="icon-page" src="content/icons/icon-alert.svg" alt="">
                                             <p>Извините, но указанное  ранее количество товара недоступно. Установлено ближайшее доступное значение.</p>
                                         </div>
                                         <div class="cart__row">
-                                            <div class="item-cart">
+                                            <div class="item-cart js-anim">
                                                 <div class="item-cart__head">
                                                     <a href="#" class="item-cart__img">
                                                         <img src="content/card-01.png" alt="photo">
@@ -826,7 +826,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="item-cart">
+                                            <div class="item-cart js-anim">
                                                 <div class="item-cart__head">
                                                     <a href="#" class="item-cart__img">
                                                         <img src="content/card-02.png" alt="photo">
@@ -856,7 +856,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="item-cart">
+                                            <div class="item-cart js-anim">
                                                 <div class="item-cart__head">
                                                     <a href="#" class="item-cart__img">
                                                         <img src="content/card-03.png" alt="photo">
@@ -886,7 +886,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="item-cart">
+                                            <div class="item-cart js-anim">
                                                 <div class="item-cart__head">
                                                     <a href="#" class="item-cart__img">
                                                         <img src="content/card-04.png" alt="photo">
@@ -917,7 +917,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cart__bottom">
+                                        <div class="cart__bottom js-anim">
                                             <button type="button" class="cart__clear js-delete-full">
                                                 <img class="icon-page" src="content/icons/icon-trash.svg" alt="">
                                                 <span>Очистить корзину</span>
@@ -925,8 +925,8 @@
                                         </div>
                                     </div>
                                     <div class="side-cart">
-                                        <h2 class="cart__title">Заказ</h2>
-                                        <div class="side-cart__wrapper">
+                                        <h2 class="cart__title js-anim">Заказ</h2>
+                                        <div class="side-cart__wrapper js-anim">
                                             <div class="side-cart__title">Контактная информация</div>
                                             <div class="side-cart__items">
                                                 <label class="label-form fly-placeholder">
@@ -985,7 +985,7 @@
             <div class="recall-request section-page section-page--no-bottom">
                 <div class="container">
                     <form action="#" method="post" class="form form--row js-form">
-                        <div class="form__items">
+                        <div class="form__items js-anim">
                             <div class="form__item">
                                 <label class="label-form fly-placeholder">
                                     <input type="text" name="Name" class="label-form__input" data-required="text" autocomplete="off">
@@ -1001,7 +1001,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="form__btns">
+                        <div class="form__btns js-anim">
                             <button type="submit" class="btn btn--red js-form__submit">Заказать звонок</button>
                             <p class="form__policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
                         </div>
@@ -1010,7 +1010,7 @@
             </div>
             <footer class="footer">
                 <div class="container">
-                    <div class="footer__row _spollers">
+                    <div class="footer__row _spollers js-anim js-anim--opacity">
                         <a href="#" class="logo-page logo-page--white">
                             <img src="content/logo-page-white.png" alt="логотип компании">
                             <p>
@@ -1082,7 +1082,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer__bottom">
+                    <div class="footer__bottom js-anim js-anim--opacity">
                         <p class="footer__copyright">© 2010 - 2022 Все права защищены | <a href="#">Политика конфиденциальности</a></p>
                         <div class="socials-page">
                             <a href="#">
@@ -1152,53 +1152,46 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="popup popup_cookie-warning">
-	<div class="popup__body close-cookie-warning">
-		<div class="popup__content">
-			<a href="" class="popup__close close-popup close-cookie-warning">
-				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path class="popup__close-icon"
-						d="M29.1215 1.28976L15.8844 14.5268L28.7821 27.4244L27.4244 28.7821L14.5268 15.8844L1.28976 29.1215L0 27.8317L13.237 14.5947L0.271531 1.62918L1.62918 0.27153L14.5947 13.237L27.8317 0L29.1215 1.28976Z"
-						fill="black" />
-				</svg>
-			</a>
-            <div class="popup-template">
-                <div class="popup-template__section">
-                    <div class="popup-template__text">
-                        Для корректной работы сайта требуется включить cookies в браузере
+            <div class="cookies-banner">
+                <div class="container">
+                    <div class="cookies-banner__row">
+                        <div class="cookies-banner__text">
+                            Сайт использует файлы cookie. Подробная информация в правилах по <a href="#">обработке персональных данных.</a>
+                        </div>
+                        <button class="btn btn--black cookies-button">
+                            Продолжить работу
+                        </button>
+                        <div class="cookies-banner__close cookies-button">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0654 12.002L11.9987 11.0686L6.93238 6.00111L12 0.933797L11.0667 0.000463486L5.99916 5.06767L0.933335 0.000650406L0 0.933984L5.0658 6.00098L0 11.0665L0.933333 11.9998L5.99902 6.93442L11.0654 12.002Z" fill="#7E7E7E" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
-		</div>
-	</div>
-</div>
-        <div class="cookies-banner">
-    <div class="container">
-        <div class="cookies-banner__row">
-            <div class="cookies-banner__text">
-                Сайт использует файлы cookie. Подробная информация в правилах по <a href="#">обработке персональных данных.</a>      
-            </div>
-            <button class="btn btn--black cookies-button">
-                Продолжить работу
-            </button>
-            <div class="cookies-banner__close cookies-button">
-                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0654 12.002L11.9987 11.0686L6.93238 6.00111L12 0.933797L11.0667 0.000463486L5.99916 5.06767L0.933335 0.000650406L0 0.933984L5.0658 6.00098L0 11.0665L0.933333 11.9998L5.99902 6.93442L11.0654 12.002Z" fill="#7E7E7E"/>
-                </svg>                
+            <div class="warning-banner">
+                <div class="container">
+                    <div class="warning-banner__row">
+                        <div class="warning-banner__text">
+                            Для корректной работы сайта требуется включить cookies в браузере
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div> 
-        <div class="warning-banner">
-    <div class="container">
-        <div class="warning-banner__row">
-            <div class="warning-banner__text">
-                Для корректной работы сайта требуется включить cookies в браузере
-            </div>
-        </div>
-    </div>
-</div> -->
-        </div>
+        <script>
+            let ua = window.navigator.userAgent;
+
+            function isIE() {
+                ua = navigator.userAgent;
+                const isIe = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+                return isIe;
+            }
+            if (isIE()) {
+                document.querySelector('html').classList.add('fix-ie');
+            }
+
+        </script>
         <script src="js/vendors.min.js"></script>
         <script src="js/main.min.js"></script>
     </body>

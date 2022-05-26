@@ -1,14 +1,14 @@
 {% from 'mixins/card.njk' import card %}
 
 <div class="static-slider">
-    <div class="head-section">
+    <div class="head-section js-anim">
         <h2 class="title-section">Популярные товары</h2>
         <div class="nav-slider">
             <button type="button" class="btn-slider btn-prev"></button>
             <button type="button" class="btn-slider btn-next"></button>
         </div>
     </div>
-    <div class="swiper">
+    <div class="swiper js-anim">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 {{card(

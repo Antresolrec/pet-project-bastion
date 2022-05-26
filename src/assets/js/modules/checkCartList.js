@@ -11,6 +11,4 @@ export default function checkCartList() {
   }
 }
 
-if (cart) {
-  checkCartList();
-}
+checkCartList();

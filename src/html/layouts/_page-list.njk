@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="/css/page-list.css">
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <div class="wrapper">
+        <main class="page">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    <script>
+        let ua = window.navigator.userAgent;
+        function isIE() {
+        ua = navigator.userAgent;
+        const isIe = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+        return isIe;
+        }
+        if (isIE()) {
+        document.querySelector('html').classList.add('fix-ie');
+        }
+    </script>
 </body>
 </html>

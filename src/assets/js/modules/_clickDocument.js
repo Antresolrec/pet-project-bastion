@@ -1,6 +1,6 @@
 import closeDropMenu from './custom-drop-menu';
 import closeStepMenu from './menu-steps-header';
-import { checkOpenCatalog } from './burger';
+// import { checkOpenCatalog } from './burger';
 import addToCart from './addToCart';
 import addToFavorite from './addToFavorite';
 import removeFromCart from './removeFromCart';
@@ -10,6 +10,7 @@ import jsToggle from './clickToggle';
 import deleteCard from './deleteCard';
 import checkCartList from './checkCartList';
 import sumCart from './sumCart';
+import { toggleLocationList, setLocation } from './choice-location';
 
 document.addEventListener('click', (e) => {
   const target = e.target;
@@ -19,10 +20,12 @@ document.addEventListener('click', (e) => {
   addToFavorite(target);
   removeFromCart(target);
   removeFromFavorite(target);
-  checkOpenCatalog();
+  // checkOpenCatalog();
   setCatalog(target);
   jsToggle(target);
   deleteCard(target);
   checkCartList();
   sumCart();
+  toggleLocationList(target);
+  setLocation(target);
 });

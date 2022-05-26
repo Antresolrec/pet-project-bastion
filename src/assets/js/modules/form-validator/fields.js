@@ -1,4 +1,4 @@
-import validator from 'validator';
+// import validator from 'validator';
 
 /**
  * Создает экземпляр Field.
@@ -73,7 +73,7 @@ class Field {
         }
         break;
       case 'email':
-        if (validator.isEmail(this.field.value)) {
+        if (this.field.value.search(/.+@.+\..+/i) === 0) {
           this.removeError();
           this.addCorrectMessage();
           return true;

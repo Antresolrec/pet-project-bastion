@@ -3,17 +3,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bastion</title>
     <meta name="description" content="Bastion">
     <meta name="keywords" content="Bastion">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Bastion"/>
     <meta property="og:description" content="Bastion"/>
-    <meta property="og:image" content=""/>
+    <meta property="og:image" content="content/logo-page-white.png"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content=""/>
-    <link rel="shortcut icon" href="">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="content/icons/icon-pay-03.svg">
 </head>
 <body>
     <div class="wrapper">
@@ -27,9 +27,19 @@
 
         {% include 'blocks/popups/popup-recall.njk' %}
         {% include 'blocks/popups/popup-add-to-cart.njk' %}
-        <!-- {% include 'blocks/popups/cookie-warning-popup.njk' %}
         {% include 'includes/cookies.njk' %} 
-        {% include 'includes/warning-banner.njk' %} -->
+        {% include 'includes/warning-banner.njk' %}
     </div>
+    <script>
+        let ua = window.navigator.userAgent;
+        function isIE() {
+        ua = navigator.userAgent;
+        const isIe = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+        return isIe;
+        }
+        if (isIE()) {
+        document.querySelector('html').classList.add('fix-ie');
+        }
+    </script>
 </body>
 </html>

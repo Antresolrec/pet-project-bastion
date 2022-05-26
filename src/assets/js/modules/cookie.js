@@ -39,8 +39,16 @@ function hideMessageWarningBanner() {
 function popupWarningCookie() {
   const closeWarning = document.querySelectorAll('.close-cookie-warning');
   setTimeout(() => {
-    window.popupInit('.popup_cookie-warning');
+    // window.popupInit('.popup_cookie-warning');
+    window.Fancybox.show([
+      {
+        src: 'Для корректной работы сайта требуется включить cookies в браузере',
+        type: 'html',
+        closeButton: 'top',
+      },
+    ]);
   }, 2000);
+  window.Fancybox.show('test');
   closeWarning.forEach((el) => {
     el.addEventListener('click', () => {
       setTimeout(showMessageWarningBanner, 1000);

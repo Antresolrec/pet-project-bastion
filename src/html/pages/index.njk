@@ -1,26 +1,18 @@
 {% extends "layouts/_page-list.njk" %}
 
 {% set pages = [
-    {title: 'Главная', href: 'main.html', desktop: '+', mobile: '+'},
-    {title: 'Каталог', href: 'catalog.html', desktop: '+', mobile: '+'},
-    {title: 'Карточка товара', href: 'product-detailed.html', desktop: '+', mobile: '+'},
-    {title: 'Корзина', href: 'cart.html', desktop: '+', mobile: '+'},
-    {title: '404', href: '404.html', desktop: '+', mobile: '+'}
+    {title: 'Главная', href: 'main.html'},
+    {title: 'Каталог', href: 'catalog.html'},
+    {title: 'Карточка товара', href: 'product-detailed.html'},
+    {title: 'Корзина', href: 'cart.html'},
+    {title: '404', href: '404.html'}
 ] %}
 
 {% block content %}
     <div class="container">
         <div class="page-list">
             <div class="page-list-header">
-                <div class="page-list-link-title">
-                    Страница и ссылка
-                </div>
-                <div class="page-list-progress-title">
-                    Верстка десктопная
-                </div>
-                <div class="page-list-progress-title">
-                    Верстка мобильная
-                </div>
+                Страницы
             </div>
             <div class="page-list-title">
                 <div class="page-list-body">
@@ -30,14 +22,6 @@
                                 <a href="{{ page.href }}" class="page-list-link">
                                     {{ page.title }}
                                 </a>
-                            </div>
-                            <div class="page-list-progress">
-                                <div class="page-list-progress-item">
-                                    {{ page.desktop }}
-                                </div>
-                                <div class="page-list-progress-item">
-                                    {{ page.mobile }}
-                                </div>
                             </div>
                         </div>
                     {% endfor %}

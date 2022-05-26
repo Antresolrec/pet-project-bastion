@@ -1,7 +1,7 @@
 {% macro breadCrumbsMixin(items, backButton) %}
     {% if items %}
         <div class="container">
-            <div class="bread-crumbs">
+            <div class="bread-crumbs js-anim js-anim--opacity">
                 {% for item in items %}
                     {% if loop.index < loop.length %}
                         <span class="bread-crumbs__item">
