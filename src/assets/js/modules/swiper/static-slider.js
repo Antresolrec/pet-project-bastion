@@ -13,7 +13,6 @@ class StaticSlider {
   initSlider() {
     this.swiperSlider = new Swiper(this.slider, {
       speed: 700,
-      // loop: true,
       clickable: false,
       slidesPerView: 'auto',
       slideToClickedSlide: false,

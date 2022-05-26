@@ -1,3 +1,4 @@
+import './modules/lazyload';
 import './modules/dynamic-adapt';
 import './modules/spollers';
 import './modules/select';

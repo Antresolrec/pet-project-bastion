@@ -24,7 +24,10 @@
         </ul>
     {% endif %}
     <a href="#" class="card__img">
-        <img src="{{img}}" alt="фото товара" title="картинка с гавнокачеством из макета">
+        <picture>
+            <source type="image/webp" srcset="{{img}}.webp">
+            <img src="{{img}}.png" alt="фото товара" title="картинка с гавнокачеством из макета">
+        </picture>
     </a>
     <div class="card__content">
         <div class="card__head">
