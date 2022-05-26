@@ -108,7 +108,7 @@
     &__bottom
         display: flex
         justify-content: space-between
-        flex-direction: column-reverse
+        flex-direction: column
         align-items: center
         gap: 2rem
         margin: 3rem 0 0 0
@@ -116,12 +116,15 @@
             flex-direction: row
             padding: 2rem 0 0 0
             border-top: solid .2rem rgba($colorWhite, .2)
-
+        .socials-page
+            @media (max-width: 767px)
+                order: 1
 
     &__copyright
         font-size: 1.2rem
         line-height: 1.2
         @media (max-width: 767px)
+            order: 2
             text-align: center
             width: 100%
             border-top: solid .2rem rgba($colorWhite, .2)
