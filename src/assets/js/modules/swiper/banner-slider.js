@@ -14,6 +14,9 @@ class BannerSlider {
       speed: 1500,
       parallax: true,
       loop: true,
+      autoplay: {
+        delay: 5000,
+      },
       navigation: {
         nextEl: this.btnNext,
         prevEl: this.btnPrev,
