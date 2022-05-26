@@ -193,15 +193,30 @@
         display: flex
         justify-content: space-between
         align-items: center
-        gap: 2rem
-        margin: 3rem 0 0 0
-        padding: 0 0 0 1.5rem
+        flex-wrap: wrap
+        margin: 2rem 0 0 0
+        gap: 1rem
+        @media (min-width: 768px)
+            gap: 2rem
+            margin: 3rem 0 0 0
+            padding: 0 0 0 1.5rem
+            flex-wrap: nowrap
 
     &__nav-item
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 2rem
+        @media (min-width: 768px)
+            justify-content: flex-end
 
     &__nav-link
         color: $colorRed
-        margin: 0 0 0 2rem
+        @media (min-width: 768px)
+            margin: 0 0 0 auto
+        @media (any-hover: hover)
+            &:hover
+                text-decoration: underline
 
 .catalog__row._list
     .catalog__card
