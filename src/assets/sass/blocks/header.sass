@@ -418,7 +418,7 @@
     flex: 1 1 auto
     &._open
         .search-header
-            &__form
+            &__form-wrapper
                 opacity: 1
                 transform: translateY(0)
                 pointer-events: all
@@ -428,7 +428,7 @@
         margin: 0 0 0 auto
         @media (min-width: 575px)
             display: none
-    &__form
+    &__form-wrapper
         @media (max-width: 574px)
             position: fixed
             top: 0
@@ -441,19 +441,18 @@
             opacity: 0
             pointer-events: none
             transition: opacity .25s, transform .25s
-
+    &__form
+        position: relative
+        display: flex
+        gap: .5rem
     &__label
         border-radius: .4rem
+        width: 100%
         overflow: hidden
         display: flex
         align-items: center
         position: relative
-        gap: 1rem
-        padding: 0 0 0 1rem
         background-color: $colorWhite
-        @media (min-width: 1024px)
-            gap: 1.5rem
-            padding: 0 0 0 1.5rem
         @media (any-hover: hover)
             &:hover
                 .search-header__border
@@ -465,6 +464,7 @@
         font-weight: 300
         letter-spacing: 0.009em
         font-size: 1.4rem
+        padding: 0 1rem
         @media (min-width: 768px)
             font-size: 1.5rem
         &::placeholder

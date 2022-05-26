@@ -59,15 +59,17 @@
                     <button type="button" class="search-header__trigger js-drop">
                         <img class="icon-page" src="content/icons/icon-search.svg" alt="" aria-hidden="true">
                     </button>
-                    <form class="search-header__form" action="/" method="get">
-                        <label class="search-header__label">
+                    <div class="search-header__form-wrapper">
+                        <form class="search-header__form" action="/" method="get">
                             <button type="submit" class="search-header__btn">
                                 <img class="icon-page" src="content/icons/icon-search.svg" alt="" aria-hidden="true">
                             </button>
-                            <input type="search" name="q" placeholder="Поиск по названию..." class="search-header__input">
-                            <span class="search-header__border"></span>
-                        </label>
-                    </form>
+                            <label class="search-header__label">
+                                <input type="search" name="q" placeholder="Поиск по названию..." class="search-header__input">
+                                <span class="search-header__border"></span>
+                            </label>
+                        </form>
+                    </div>
                 </div>
                 <button type="button" data-da=".nav-header__wrapper,767,last" class="btn btn--red" data-fancybox="recall-popup" data-src="#recall-popup">
                     <span>Заказать звонок</span>
